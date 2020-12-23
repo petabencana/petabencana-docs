@@ -1,7 +1,8 @@
-## Stats
+# Stats
 
 Some summary statistics:
 
-* [/stats/floodedRegionsSummary](floodedRegionsSummary.md) :  summary of regions containing flooded RWs
-* [/stats/floodedRWsSummary](floodedRWsSummary.md) : summary of flooded RWs
-* [/stats/reportsSummary](reportsSummary.md) : summary of reports
+* [/stats/floodedRegionsSummary](floodedregionssummary.md) :  summary of regions containing flooded RWs
+* [/stats/floodedRWsSummary](floodedrwssummary.md) : summary of flooded RWs
+* [/stats/reportsSummary](reportssummary.md) : summary of reports
+

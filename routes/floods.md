@@ -1,50 +1,52 @@
+# Floods
 
-
-## Floods
-
-Live flood information - by city, by flood state (if required).  Supports a /states endpoint which is non-geographic and simply gives the state of flooded areas as well as a geographic endpoint which will give flooded areas subject to a minimum_state or all areas together with their current flood status.  In addition to [topojson](https://github.com/topojson/topojson/wiki) and [geojson](http://geojson.org/) this endpoint supports the [Common Alerting Protocol (CAP)](https://en.wikipedia.org/wiki/Common_Alerting_Protocol). 
+Live flood information - by city, by flood state \(if required\). Supports a /states endpoint which is non-geographic and simply gives the state of flooded areas as well as a geographic endpoint which will give flooded areas subject to a minimum\_state or all areas together with their current flood status. In addition to [topojson](https://github.com/topojson/topojson/wiki) and [geojson](http://geojson.org/) this endpoint supports the [Common Alerting Protocol \(CAP\)](https://en.wikipedia.org/wiki/Common_Alerting_Protocol).
 
 Note that flood states in CAP format have a default expiry time of 6 hours from the time that the API request is made.
 
-
-### Flood State Codes
+## Flood State Codes
 
 Numeric codes are used to represent flood states, these are as follows:
 
 | Code | Severity | Description |
-| -- | -- | -- |
+| :--- | :--- | :--- |
 | 1 | Unknown | AN UNKNOWN LEVEL OF FLOODING - USE CAUTION - |
 | 2 | Minor | FLOODING OF BETWEEN 10 and 70 CENTIMETERS |
 | 3 | Moderate | FLOODING OF BETWEEN 71 and 150 CENTIMETERS |
 | 4 | Severe | FLOODING OF OVER 150 CENTIMETERS |
 
-
-### Request Format
+## Request Format
 
 | Query Parameter | Description | Format | Required |
-| -- | -- | -- | -- |
-| city | Which city do we wish to return infrastructure for? (one of `bdg`, `jbd`, `sby`) | String | No |
-| format | Which format should we return results in? (one of `json`, `xml`, defaults to `json`) | String | No |
-| geoformat | What format should geographic results use (one of `topojson`, `geojson`, `cap` defaults to `topojson`) | String | No |
-| minimum_state | The minimum flood state that should be returned? (min: `1`, max: `4`) | Number | No |
+| :--- | :--- | :--- | :--- |
+| city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
+| format | Which format should we return results in? \(one of `json`, `xml`, defaults to `json`\) | String | No |
+| geoformat | What format should geographic results use \(one of `topojson`, `geojson`, `cap` defaults to `topojson`\) | String | No |
+| minimum\_state | The minimum flood state that should be returned? \(min: `1`, max: `4`\) | Number | No |
 
+## GET /floods
 
-
-{% method %}
-### GET /floods
-
-{% sample lang="https" %}
-
+{% tabs %}
+{% tab title="https" %}
 List all flooded areas in Jakarta with a flood state of 1 or higher.
 
-```https
+```text
 curl "https://data.petabencana.id/floods?city=jbd&minimum_state=1"
 ```
+{% endtab %}
 
-{% common %}
+{% tab title="https" %}
+List all flooded areas in Jakarta with a flood state of 1 or higher in CAP format.
+
+```text
+curl "https://data.petabencana.id/floods?city=jbd&minimum_state=1&format=xml&geoformat=cap"
+```
+{% endtab %}
+{% endtabs %}
+
 Results are as follows:
 
-```json
+```javascript
 {
   "statusCode": 200,
   "result": {
@@ -289,18 +291,9 @@ Results are as follows:
 }
 ```
 
-{% sample lang="https" %}
-
-List all flooded areas in Jakarta with a flood state of 1 or higher in CAP format.
-
-```https
-curl "https://data.petabencana.id/floods?city=jbd&minimum_state=1&format=xml&geoformat=cap"
-```
-
-{% common %}
 Results are as follows:
 
-```xml
+```markup
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://data.petabencana.id/floods</id>
@@ -342,25 +335,18 @@ Results are as follows:
     </entry>
 </feed>
 ```
-{% endmethod %}
 
-
-
-{% method %}
-### GET /floods/states
-
-{% sample lang="https" %}
+## GET /floods/states
 
 List all flooded area states in Jakarta with a flood state of 1 or higher.
 
-```https
+```text
 curl "https://data.petabencana.id/floods/states?city=jbd&minimum_state=1"
 ```
 
-{% common %}
 Results are as follows:
 
-```json
+```javascript
 {
   "statusCode": 200,
   "result": [
@@ -372,64 +358,42 @@ Results are as follows:
   ]
 }
 ```
-{% endmethod %}
 
+## PUT /floods/:localAreaId
 
-{% method %}
-### PUT /floods/:localAreaId
+PUT a new flood state in the system for a given local area \(secure, requires authorisation token\).
 
-{% sample lang="https" %}
-
-PUT a new flood state in the system for a given local area (secure, requires authorisation token).
-
-```https
+```text
 curl -X PUT -H "Content-Type: application/json" -d '{
     "state": 2
 }' "https://data.petabencana.id/floods/5"
 ```
 
-{% common %}
 Results are as follows:
 
-```json
+```javascript
 {
   "localAreaId": 5,
   "state": 2,
   "updated": true
 }
 ```
-{% endmethod %}
 
+## DELETE /floods/:localAreaId
 
+Clears the flood state entirely for a given local area \(secure, requires authorisation token\).
 
-{% method %}
-### DELETE /floods/:localAreaId
-
-{% sample lang="https" %}
-
- Clears the flood state entirely for a given local area (secure, requires authorisation token).
-
-```https
+```text
 curl -X DELETE "https://data.petabencana.id/floods/5"
 ```
 
-{% common %}
 Results are as follows:
 
-```json
+```javascript
 {
   "localAreaId": 5,
   "state": null,
   "updated": true
 }
 ```
-{% endmethod %}
-
-
-
-
-
-
-
-
 

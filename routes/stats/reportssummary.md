@@ -1,31 +1,23 @@
-## Stats (reports summary)
+# Stats - Reports Summary
 
-Count of reports by source ("qlue" for Qlue, "detik" for Detik Pasangmata, or "grasp" being combined Twitter and Telegram), by default reports will be returned for the last hour.
+Count of reports by source \("qlue" for Qlue, "detik" for Detik Pasangmata, or "grasp" being combined Twitter and Telegram\), by default reports will be returned for the last hour.
 
-
-### Request Format
+## Request Format
 
 | Query Parameter | Description | Format | Required |
-| -- | -- | -- | -- |
-| city | Which city do we wish to return infrastructure for? (one of `bdg`, `jbd`, `sby`) | String | No |
-| timeperiod | What time period (in seconds) to list reports for, must be strictly between 1 and 604800 (1 week) | Number | No |
+| :--- | :--- | :--- | :--- |
+| city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
+| timeperiod | What time period \(in seconds\) to list reports for, must be strictly between 1 and 604800 \(1 week\) | Number | No |
 
+## GET /stats/getReportsSummary.md
 
-{% method %}
-### GET /stats/getReportsSummary.md
-
-{% sample lang="https" %}
-
-
-
-```https
+```text
 curl "https://data.petabencana.id/stats/reportsSummary?city=jbd"
 ```
 
-{% common %}
 Results are as follows:
 
-```json
+```javascript
 {
   "statusCode": 200,
   "result": {
@@ -81,4 +73,3 @@ Results are as follows:
 }
 ```
 
-{% endmethod %}

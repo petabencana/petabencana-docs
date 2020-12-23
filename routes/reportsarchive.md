@@ -1,37 +1,33 @@
-## Reports Archive
+# Reports/Archive
 
-Archive of flood reports \(see [Reports endpoint](/routes/reports.md) documentation\), presented as a JSON with all the flood reports received within the specified time period.
+Archive of flood reports \(see [Reports endpoint](reports.md) documentation\), presented as a JSON with all the flood reports received within the specified time period.
 
 Currently this data is only avaialble for Jakarta.
 
-### Request Format
+## Request Format
 
 | Query Parameter | Description | Format | Required |
 | :--- | :--- | :--- | :--- |
 | start | Start time for archive period | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
 | end | End time for archive period | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
-| city | Which city do we wish to return infrastructure for? (one of `bdg`, `jbd`, `sby`) | String | No |
-| geoformat | What format should geographic results use (one of `topojson`, `geojson` defaults to `topojson`) | String | No |
+| city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
+| geoformat | What format should geographic results use \(one of `topojson`, `geojson` defaults to `topojson`\) | String | No |
 
 Note that time zone must be specified as +/- UTC offset which will require HTML character encoding \(e.g. +0700 becomes %2B0700\).
 
-### Get /reports/archive
+## Get /reports/archive
 
-{% method %}
-### GET /reports
-
-{% sample lang="https" %}
+## GET /reports
 
 List flood reports in Jabodetabek received within specified time window
 
-```https
+```text
 curl "https://data.petabencana.id/reports/archive?start=2017-12-04T00%3A00%3A00%2B0700&end=2017-12-06T05%3A00%3A00%2B0700&geoformat=geojson"
 ```
 
-{% common %}
 Results are as follows:
 
-```json
+```javascript
 {
     "statusCode": 200,
     "result": {
@@ -67,6 +63,4 @@ Results are as follows:
         }
       }
 ```
-
-{% endmethod %}
 

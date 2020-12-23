@@ -1,8 +1,8 @@
-## Reports Time Series
+# Reports/Timeseries
 
-Time series of flood reports \(see [Reports endpoint](/routes/reports.md) documentation\), presented as the count of flood reports every hour within the specified time period. Count is recorded alongside an hourly timestamp in ISO8601 format at UTC+0.
+Time series of flood reports \(see [Reports endpoint](reports.md) documentation\), presented as the count of flood reports every hour within the specified time period. Count is recorded alongside an hourly timestamp in ISO8601 format at UTC+0.
 
-### Request Format
+## Request Format
 
 | Query Parameter | Description | Format | Required |
 | :--- | :--- | :--- | :--- |
@@ -11,23 +11,19 @@ Time series of flood reports \(see [Reports endpoint](/routes/reports.md) docume
 
 Note that time zone must be specified as +/- UTC offset which will require HTML character encoding \(e.g. +0700 becomes %2B0700\).
 
-### Get /reports/timeseries
+## Get /reports/timeseries
 
-{% method %}
-### GET /reports/timeseries
-
-{% sample lang="https" %}
+## GET /reports/timeseries
 
 Get count of flood reports within specified time period.
 
-```https
+```text
     curl "https://data.petabencana.id/reports/timeseries?start=2017-11-26T12%3A00%3A00%2B0700&end=2017-11-26T15%3A00%3A00%2B0700"
 ```
 
-{% common %}
 Results are as follows:
 
-```json
+```javascript
     {
         "statusCode": 200,
         "result": [
@@ -50,8 +46,4 @@ Results are as follows:
         ]
     }
 ```
-
-{% endmethod %}
-
-
 

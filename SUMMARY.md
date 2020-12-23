@@ -1,4 +1,4 @@
-# Summary
+# Table of contents
 
 * [Introduction](README.md)
 * [General](general/README.md)
@@ -24,6 +24,7 @@
   * [Reports/Archive](routes/reportsarchive.md)
   * [Reports/Timeseries](routes/reportstimeseries.md)
   * [Stats](routes/stats/README.md)
-    * [Stats - Reports Summary](routes/stats/reportsSummary.md)
-    * [Stats - Flooded RWs Summary](routes/stats/floodedRWsSummary.md)
-    * [Stats - Flooded Regions Summary](routes/stats/floodedRegionsSummary.md)
+    * [Stats - Reports Summary](routes/stats/reportssummary.md)
+    * [Stats - Flooded RWs Summary](routes/stats/floodedrwssummary.md)
+    * [Stats - Flooded Regions Summary](routes/stats/floodedregionssummary.md)
+

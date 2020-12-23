@@ -1,26 +1,22 @@
-## Stats (flooded regions summary)
+# Stats - Flooded Regions Summary
 
 List of all regions with currently flooded RWs.
 
-### Request Format
+## Request Format
 
 | Query Parameter | Description | Format | Required |
-| -- | -- | -- | -- |
-| city | Which city do we wish to return infrastructure for? (one of `bdg`, `jbd`, `sby`) | String | No |
+| :--- | :--- | :--- | :--- |
+| city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
 
-{% method %}
-### GET /stats/floodedRegionsSummary
+## GET /stats/floodedRegionsSummary
 
-{% sample lang="https" %}
-
-```https
+```text
 curl "https://data.petabencana.id/stats/floodedRegionsSummary?city=jbd"
 ```
 
-{% common %}
 Results are as follows:
 
-```json
+```javascript
 {
   "total number of regions with flooded RWs": 4,
   "regions with flooded RWs": [
@@ -32,4 +28,3 @@ Results are as follows:
 }
 ```
 
-{% endmethod %}

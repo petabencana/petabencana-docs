@@ -1,10 +1,10 @@
-## Floods Time Series
+# Floods/Timeseries
 
-Time series of flooded areas \(see [Floods endpoint](/routes/floods.md) documentation\), presented as the count of flood affected areas every hour within the specified time period. Count is recorded alongside an hourly timestamp in ISO8601 format at UTC+0.
+Time series of flooded areas \(see [Floods endpoint](floods.md) documentation\), presented as the count of flood affected areas every hour within the specified time period. Count is recorded alongside an hourly timestamp in ISO8601 format at UTC+0.
 
 Currently this data is only available for Jakarta.
 
-### Request Format
+## Request Format
 
 | Query Parameter | Description | Format | Required |
 | :--- | :--- | :--- | :--- |
@@ -13,23 +13,19 @@ Currently this data is only available for Jakarta.
 
 Note that time zone must be specified as +/- UTC offset which will require HTML character encoding \(e.g. +0700 becomes %2B0700\).
 
-### Get /floods/timeseries
+## Get /floods/timeseries
 
-{% method %}
-### GET /floods
-
-{% sample lang="https" %}
+## GET /floods
 
 List all flooded areas in Jakarta with a flood state of 1 or higher.
 
-```https
+```text
 curl "https://data.petabencana.id/floods/timeseries?start=2017-11-20T11%3A00%3A00-0500&end=2017-11-20T15%3A00%3A00-0500"
 ```
 
-{% common %}
 Results are as follows:
 
-```json
+```javascript
     {
         "statusCode": 200,
         "result": [
@@ -56,9 +52,4 @@ Results are as follows:
         ]
     }
 ```
-
-{% endmethod %}
-
-
-
 

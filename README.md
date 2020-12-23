@@ -1,5 +1,4 @@
-# Petabencana
-
+# Introduction
 
 PetaBencana.id is a project initiated by the Urban Risk Lab at MIT as a free, transparent platform for emergency response and disaster management in megacities in South and Southeast Asia.
 
@@ -7,42 +6,45 @@ The platform adopts a “people as sensors” paradigm, where confirmed reports 
 
 PetaBencana.id gathers, sorts, and visualizes data using specially developed CogniCity Open Source Software - an enterprise-level platform for emergency response and disaster management - to transforms the noise of social and digital media into critical information for residents, communities, and government agencies
 
-
 ## Petabencana Data API
 
 Petabencana is backed by a data [API](https://en.wikipedia.org/wiki/Application_programming_interface) exposing a number of public and private endpoints. The documentation that follows allows developers to get up and running. The project is fully open source and the code is available in the [PetaBencana GitHub](https://github.com/petabencana/). The architectural diagram is available in different formats:
-* [PDF](petabencana.pdf)
-* [Visio XML](petabencana.vdx)
-* [OmniGraffle](petabencana.graffle.zip)
+
+* [PDF](https://github.com/petabencana/petabencana-docs/tree/d8b3cac5b3bc2a65abd49d874bf9c5798e93eb97/petabencana.pdf)
+* [Visio XML](https://github.com/petabencana/petabencana-docs/tree/d8b3cac5b3bc2a65abd49d874bf9c5798e93eb97/petabencana.vdx)
+* [OmniGraffle](https://github.com/petabencana/petabencana-docs/tree/d8b3cac5b3bc2a65abd49d874bf9c5798e93eb97/petabencana.graffle.zip)
 
 ### Our Sponsors
+
 #### Funding partners
-![USAid](USAID-logo.png)
-![PMI](pmi_logo.png)
+
+![USAid](.gitbook/assets/USAID-logo.png) ![PMI](.gitbook/assets/pmi_logo.png)
 
 #### Sustaining Partners
-<img src="pln_logo.png" width="170">
 
-<img src="bri_logo.png" width="250">
+![](.gitbook/assets/pln_logo.png)
 
- 
+![](.gitbook/assets/bri_logo.png)
+
 #### Data Partners
-<img src="twitter_logo.png" height="75">
 
-<img src="Mapbox_logo.png" width="220">  
+![](.gitbook/assets/twitter_logo.png)
 
-<img src="pasangmata_logo.png" width="200">
+![](https://github.com/petabencana/petabencana-docs/tree/d8b3cac5b3bc2a65abd49d874bf9c5798e93eb97/Mapbox_logo.png)
 
-<img src="jsc_logo.png" width="200">
+![](.gitbook/assets/pasangmata_logo.png)
+
+![](.gitbook/assets/jsc_logo.png)
 
 #### Implementing Partners
-<img src="bnpb_logo.png" width="500">
 
-<img src="jayaraya_logo.png" width="100">
+![](.gitbook/assets/bnpb_logo.png)
 
-<img src="bpbd_logo.png" width="250">
+![](.gitbook/assets/jayaraya_logo.png)
+
+![](.gitbook/assets/bpbd_logo.png)
 
 #### Project Partners
-<img src="Hot_logo.png" width="250">
-<img src="pcd_logo.png" width="250">
-<img src="cdl_logo.png" height="100">
+
+![](.gitbook/assets/Hot_logo.png) ![](.gitbook/assets/pcd_logo%20%281%29.png) ![](.gitbook/assets/cdl_logo.png)
+

@@ -1,36 +1,30 @@
-## Infrastructure
+# Infrastructure
 
 Locations of local infrastructure including flood gates, pumps and waterways.
 
-### Request Format
+## Request Format
 
 | URL Parameter | Description | Format | Required |
-| -- | -- | -- | -- |
-| type | What type of infrastructure do we wish to list?  (one of `floodgates`, `pumps`, `waterways`) | String | Yes |
-
+| :--- | :--- | :--- | :--- |
+| type | What type of infrastructure do we wish to list?  \(one of `floodgates`, `pumps`, `waterways`\) | String | Yes |
 
 | Query Parameter | Description | Format | Required |
-| -- | -- | -- | -- |
-| city | Which city do we wish to return infrastructure for? (one of `bdg`, `jbd`, `sby`) | String | No |
-| format | Which format should we return results in? (one of `json`, defaults to `json`) | String | No |
-| geoformat | What format should geographic results use (one of `topojson`, `geojson` defaults to `topojson`) | String | No |
+| :--- | :--- | :--- | :--- |
+| city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
+| format | Which format should we return results in? \(one of `json`, defaults to `json`\) | String | No |
+| geoformat | What format should geographic results use \(one of `topojson`, `geojson` defaults to `topojson`\) | String | No |
 
-
-{% method %}
-### GET /infrastructure/:type
-
-{% sample lang="https" %}
+## GET /infrastructure/:type
 
 Return a list of pumps in Jakarta.
 
-```https
+```text
 curl "https://data.petabencana.id/infrastructure/pumps?city=jbd"
 ```
 
-{% common %}
 Results are as follows:
 
-```json
+```javascript
 {
   "statusCode": 200,
   "result": {
@@ -96,8 +90,4 @@ Results are as follows:
   }
 }
 ```
-
-{% endmethod %}
-
-
 

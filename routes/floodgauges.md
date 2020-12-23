@@ -1,32 +1,26 @@
-## Flood Gauges
+# Flood Gauges
 
 Live flood gauge reports, by default reports will be returned for the last hour.
 
-
-### Request Format
+## Request Format
 
 | Query Parameter | Description | Format | Required |
-| -- | -- | -- | -- |
-| city | Which city do we wish to return infrastructure for? (one of `bdg`, `jbd`, `sby`) | String | No |
-| format | Which format should we return results in? (one of `json`, defaults to `json`) | String | No |
-| geoformat | What format should geographic results use (one of `topojson`, `geojson` defaults to `topojson`) | String | No |
+| :--- | :--- | :--- | :--- |
+| city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
+| format | Which format should we return results in? \(one of `json`, defaults to `json`\) | String | No |
+| geoformat | What format should geographic results use \(one of `topojson`, `geojson` defaults to `topojson`\) | String | No |
 
-
-{% method %}
-### GET /floodgauges
-
-{% sample lang="https" %}
+## GET /floodgauges
 
 List all current flood gauge reports for Jakarta.
 
-```https
+```text
 curl "https://data.petabencana.id/floodgauges?city=jbd"
 ```
 
-{% common %}
 Results are as follows:
 
-```json
+```javascript
 {
   "statusCode": 200,
   "result": {
@@ -278,8 +272,4 @@ Results are as follows:
   }
 }
 ```
-
-{% endmethod %}
-
-
 

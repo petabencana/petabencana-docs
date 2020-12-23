@@ -1,31 +1,25 @@
-## Cities
+# cities
 
-Petanbencana supports multiple cities defined by a geographic area.  This endpoint will return the supported cities together with their geographic bounds.
+Petanbencana supports multiple cities defined by a geographic area. This endpoint will return the supported cities together with their geographic bounds.
 
-
-### Request Format
+## Request Format
 
 | Query Parameter | Description | Format | Required |
-| -- | -- | -- | -- |
-| format | Which format should we return results in? (one of `json`, defaults to `json`) | String | No |
-| geoformat | What format should geographic results use (one of `topojson`, `geojson` defaults to `topojson`) | String | No |
+| :--- | :--- | :--- | :--- |
+| format | Which format should we return results in? \(one of `json`, defaults to `json`\) | String | No |
+| geoformat | What format should geographic results use \(one of `topojson`, `geojson` defaults to `topojson`\) | String | No |
 
+## GET /cities
 
-{% method %}
-### GET /cities
+Return all cities in default \(topojson\) format.
 
-{% sample lang="https" %}
-
-Return all cities in default (topojson) format.
-
-```https
+```text
 curl "https://data.petabencana.id/cities"
 ```
 
-{% common %}
 Results are as follows:
 
-```json
+```javascript
 {
   "statusCode": 200,
   "result": {
@@ -161,16 +155,15 @@ Results are as follows:
 }
 ```
 
-Return all cities in default (geojson) format.
+Return all cities in default \(geojson\) format.
 
-```https
+```text
 curl "https://data.petabencana.id/cities?geoformat=geojson"
 ```
 
-{% common %}
 Results are as follows:
 
-```json
+```javascript
 {
   "statusCode": 200,
   "result": {
@@ -282,9 +275,4 @@ Results are as follows:
   }
 }
 ```
-
-
-{% endmethod %}
-
-
 
