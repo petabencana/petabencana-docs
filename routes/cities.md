@@ -1,6 +1,6 @@
 # cities
 
-PetaBencana supports multiple cities defined by a geographic area. This endpoint will return the supported cities together with their geographic bounds.
+Petanbencana supports multiple cities defined by a geographic area. This endpoint will return the supported cities together with their geographic bounds.
 
 ## Request Format
 
