@@ -15,7 +15,7 @@ Add a report to the system from [Qlue](http://www.qlue.co.id/). The following at
 | image\_url | URL of the associated image | String | No |
 | qlue\_city | From which city was the report generated \(must be one of `jabodetabek`, `bandung`, `surabaya`\) | String | Yes |
 | disaster\_type | What type of disaster is being reported \(currently only `flood`is supported\) | String | Yes |
-| location | Geographic location of the disaster event | Lat/Lng in [ESPG:4326](http://spatialreference.org/ref/epsg/wgs-84/) | Yes |
+| location | Geographic location of the disaster event | Lat/Long in [ESPG:4326](http://spatialreference.org/ref/epsg/wgs-84/) | Yes |
 
 Here is a simple call to POST a new Qlue report:
 
