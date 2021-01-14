@@ -14,7 +14,7 @@ Petabencana report cards for disaster events. Note: [authentication](https://doc
 | text | Description of the disaster event | String | No |
 | image\_id | Identifier of the associated card image | String | No |
 | created\_at | Date and time the card was created | Date \([ISO 8601](http://www.iso.org/iso/home/standards/iso8601.htm)\) | Yes |
-| location | Geographic location of the disaster event | Lat/Lng in [ESPG:4326](http://spatialreference.org/ref/epsg/wgs-84/) | Yes |
+| location | Geographic location of the disaster event | Lat/Long in [ESPG:4326](http://spatialreference.org/ref/epsg/wgs-84/) | Yes |
 
 ### Note on card\_data
 
