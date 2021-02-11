@@ -1,4 +1,4 @@
-# Introduction
+# Pengantar
 
 PetaBencana.id is a project initiated by the Urban Risk Lab at MIT as a free, transparent platform for emergency response and disaster management in megacities in South and Southeast Asia.
 
