@@ -1,6 +1,6 @@
-# Authentication
+# Autentikasi
 
-The Petabencana API exposes some protected routes which will require authentication to access. Authentication is via a [JSON Web Token](https://jwt.io/introduction/)
+Petabencana API menyediakan beberapa rute yang diproteksi yang akan membutuhkan autentikasi untuk diakses. Autentikasi dilakukan melalui [JSON Web Token](https://jwt.io/introduction/).
 
-Note: For a new API key, please reach out to PetaBencana team
+Catatan: Untuk API _key_ baru, silakan hubungi tim PetaBencana
 

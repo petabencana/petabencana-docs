@@ -1,6 +1,6 @@
-# Content Types
+# Jenis Konten
 
-By default the Petabencana API returns [JSON](http://www.w3schools.com/json/) for all calls and expects any POST requests to supply JSON formatted bodies unless otherwise advised. [UTF-8 encoding](https://en.wikipedia.org/wiki/UTF-8) is used on all requests and responses.
+Secara default, Petabencana API mengembalikan [JSON](http://www.w3schools.com/json/) untuk semua panggilan dan merespon setiap permintaan POST berformat JSON kecuali ada permintaan format lain. [UTF-8 encoding](https://en.wikipedia.org/wiki/UTF-8) digunakan pada semua permintaan dan respon.
 
-Where Geographic data is returned this is will be encoded as [TopoJSON](https://github.com/topojson/topojson/wiki) by default. [GeoJson](http://geojson.org/) is also supported if required, by supplying `format=topojson in the API call. More details of this can be found in the specific API route documentation. In addition to TopoJSON and GeoJson we provide a public feed of real-time flood information using the`[`Common Alerting Protocol`](https://en.wikipedia.org/wiki/Common_Alerting_Protocol)`standard.`
+Data geografis yang dipanggil akan dikodekan sebagai [TopoJSON](https://github.com/topojson/topojson/wiki) by default. [GeoJson](http://geojson.org/) juga didukung jika diperlukan, dengan menyertakan `format=topojson dalam panggilan API. Detail lebih lanjut tentang hal ini dapat ditemukan dalam dokumentasi rute API spesifik. Selain TopoJSON dan GeoJSON, kami menyediakan umpan publik dari informasi banjir real-time menggunakan standar` [`Common Alerting Protocol`](https://en.wikipedia.org/wiki/Common_Alerting_Protocol)`.`
 

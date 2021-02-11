@@ -1,4 +1,4 @@
-# General
+# Informasi Umum
 
-There are a number of general standards which apply regardless of the API being called and these are documented in the pages that follow.
+Terdapat sejumlah standar umum yang berlaku dari API yang dipanggil dan didokumentasikan di halaman-halaman berikutnya.
 

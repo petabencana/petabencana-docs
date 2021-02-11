@@ -1,32 +1,32 @@
 # Pengantar
 
-PetaBencana.id is a project initiated by the Urban Risk Lab at MIT as a free, transparent platform for emergency response and disaster management in megacities in South and Southeast Asia.
+PetaBencana.id adalah platform gratis dan terbuka untuk respon darurat dan penanggulangan bencana di kota-kota besar di Asia Selatan dan Tenggara. Platform ini memanfaatkan penggunaan sosial media yang tinggi saat situasi darurat untuk mengumpulkan, menyortir dan menampilkan informasi bencana terkonfirmasi secara real-time
 
-The platform adopts a “people as sensors” paradigm, where confirmed reports are collected directly from the users at street level in a manner that removes expensive and time-consuming data processing. This framework creates accurate, real-time data which is immediately made available for users and first responders.
+Berpedoman pada paradigma “manusia adalah sensor terbaik”, dimana laporan terkonfirmasi dikumpulkan langsung dari pengguna yang langsung berada di lokasi kejadian dengan cara menghilangkan biaya mahal dan waktu dalam pemrosesan data. Kerangka ini menghasilkan data yang akurat dan real-time yang langsung dapat dilihat oleh pengguna dan _first responder_.
 
-PetaBencana.id gathers, sorts, and visualizes data using specially developed CogniCity Open Source Software - an enterprise-level platform for emergency response and disaster management - to transforms the noise of social and digital media into critical information for residents, communities, and government agencies
+PetaBencana.id mengumpulkan, menyortir dan memvisualisasikan data menggunakan perangkat lunak yang didesain khusus bernama Cognicity Open Source Software, untuk mengubah “kebisingan” di sosial dan digital media menjadi informasi yang penting untuk masyarakat, komunitas dan lembaga pemerintah.
 
-## Petabencana Data API
+## API Data PetaBencana
 
-Petabencana is backed by a data [API](https://en.wikipedia.org/wiki/Application_programming_interface) exposing a number of public and private endpoints. The documentation that follows allows developers to get up and running. The project is fully open source and the code is available in the [PetaBencana GitHub](https://github.com/petabencana/). The architectural diagram is available in different formats:
+Petabencana didukung oleh API data yang menyajikan sejumlah endpoint \(ujung jalur informasi dalam jaringan\) yang bersifat publik dan pribadi. Dokumentasi berikut memungkinkan pengembang untuk menjalankan sistem serupa. Proyek ini sepenuhnya terbuka dan kodenya tersedia di [Github PetaBencana](https://github.com/petabencana/). Diagram arsitektur tersedia dalam berbagai format:
 
-* [PDF](https://github.com/petabencana/petabencana-docs/tree/d8b3cac5b3bc2a65abd49d874bf9c5798e93eb97/petabencana.pdf)
+* PDF
 * [Visio XML](https://github.com/petabencana/petabencana-docs/tree/d8b3cac5b3bc2a65abd49d874bf9c5798e93eb97/petabencana.vdx)
 * [OmniGraffle](https://github.com/petabencana/petabencana-docs/tree/d8b3cac5b3bc2a65abd49d874bf9c5798e93eb97/petabencana.graffle.zip)
 
-### Our Sponsors
+### Sponsor Kami
 
-#### Funding partners
+#### Mitra Pendanaan
 
 ![USAid](.gitbook/assets/USAID-logo.png) ![PMI](.gitbook/assets/pmi_logo.png)
 
-#### Sustaining Partners
+#### Mitra Pendukung
 
 ![](.gitbook/assets/pln_logo.png)
 
 ![](.gitbook/assets/bri_logo.png)
 
-#### Data Partners
+#### Mitra Data
 
 ![](.gitbook/assets/twitter_logo.png)
 
@@ -36,7 +36,7 @@ Petabencana is backed by a data [API](https://en.wikipedia.org/wiki/Application_
 
 ![](.gitbook/assets/jsc_logo.png)
 
-#### Implementing Partners
+#### Mitra Pelaksana
 
 ![](.gitbook/assets/bnpb_logo.png)
 
@@ -44,7 +44,7 @@ Petabencana is backed by a data [API](https://en.wikipedia.org/wiki/Application_
 
 ![](.gitbook/assets/bpbd_logo.png)
 
-#### Project Partners
+#### Mitra Proyek
 
 ![](.gitbook/assets/Hot_logo.png) ![](.gitbook/assets/pcd_logo%20%281%29.png) ![](.gitbook/assets/cdl_logo.png)
 
