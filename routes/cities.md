@@ -1,23 +1,23 @@
-# Cities
+# Batas Administrasi
 
-PetaBencana supports multiple cities defined by a geographic area. This endpoint will return the supported cities together with their geographic bounds.
+PetaBencana mendukung seluruh provinsi di Indonesia yang dibedakan berdasarkan wilayah geografis. Endpoint ini akan mengembalikan kota yang didukung beserta batas geografisnya.
 
-## Request Format
+## Format Permintaan
 
-| Query Parameter | Description | Format | Required |
+| Parameter Kueri | Deskripsi | Format | Wajib |
 | :--- | :--- | :--- | :--- |
-| format | Which format should we return results in? \(one of `json`, defaults to `json`\) | String | No |
-| geoformat | What format should geographic results use \(one of `topojson`, `geojson` defaults to `topojson`\) | String | No |
+| format | Format apa yang diperlukan dari hasil yang diberikan? \(salah satu `json`, _default_ ke `json`\) | String | Tidak |
+| geoformat | Format apa yang diperlukan untuk hasil geografis? \(salah satu antara `topojson`, `geojson` _default_ ke `topojson`\) | String | Tidak |
 
 ## GET /cities
 
-Return all cities in default \(topojson\) format.
+Menampilkan semua kota dalam format default \(topojson\).
 
 ```text
 curl "https://data.petabencana.id/cities"
 ```
 
-Results are as follows:
+Hasilnya adalah sebagai berikut:
 
 ```javascript
 {
@@ -155,13 +155,13 @@ Results are as follows:
 }
 ```
 
-Return all cities in default \(geojson\) format.
+Menampilkan semua kota dalam format default \(geojson\)
 
 ```text
 curl "https://data.petabencana.id/cities?geoformat=geojson"
 ```
 
-Results are as follows:
+Hasilnya adalah sebagai berikut:
 
 ```javascript
 {

@@ -13,7 +13,7 @@
   * [Contoh](general/examples.md)
 * [API](routes/README.md)
   * [Kartu Laporan](routes/cards.md)
-  * [Cities](routes/cities.md)
+  * [Batas Administrasi](routes/cities.md)
   * [Feeds](routes/feeds.md)
   * [Flood Gauges](routes/floodgauges.md)
   * [Floods](routes/floods.md)

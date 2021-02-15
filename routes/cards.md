@@ -30,7 +30,7 @@ Misalnya kartu dengan data banjir termasuk flood\_depth:
   }
 ```
 
-Or, a card with pre-flood data report regarding a drain.
+Atau, kartu dengan laporan data pra-banjir tentang saluran pembuangan.
 
 ```javascript
   "disaster_type": "prep",
@@ -41,15 +41,15 @@ Or, a card with pre-flood data report regarding a drain.
 
 ## GET /cards/:cardId
 
-Retrieve details of a card:
+Dapatkan detail kartu:
 
-Here is a simple call to GET a card:
+Berikut adalah panggilan sederhana untuk GET kartu:
 
 ```text
 curl -X GET -H "X-Api-Key: API_KEY_GOES_HERE" "https://data.petabencana.id/cards/abcdefg"
 ```
 
-The card was found:
+Kartu telah ditemukan:
 
 ```javascript
 {
@@ -66,7 +66,7 @@ The card was found:
 }
 ```
 
-The card does not exist:
+Kartu tidak ada:
 
 ```javascript
 {
@@ -78,9 +78,9 @@ The card does not exist:
 
 ## PUT /cards/:cardId
 
-Update a card with details a disaster event report:
+Memperbarui kartu dengan detail laporan kejadian bencana: 
 
-Here is a simple call to PUT a card:
+Berikut adalah panggilan sederhana untuk PUT kartu:
 
 ```text
 curl -X PUT -H "X-Api-Key: API_KEY_GOES_HERE" -d '{
@@ -99,7 +99,7 @@ curl -X PUT -H "X-Api-Key: API_KEY_GOES_HERE" -d '{
 }' "https://data.petabencana.id/cards/abcdefg"
 ```
 
-Card was successfully created:
+Kartu telah berhasil dibuat:
 
 ```javascript
 {
@@ -109,7 +109,7 @@ Card was successfully created:
 }
 ```
 
-The card does not exist:
+Kartu tidak ada:
 
 ```javascript
 {
@@ -119,7 +119,7 @@ The card does not exist:
 }
 ```
 
-The report already exists for the card:
+Laporan sudah ada untuk kartu:
 
 ```javascript
 {
@@ -131,18 +131,18 @@ The report already exists for the card:
 
 ## GET /cards/:cardId/images
 
-GET a signed S3 URL to upload a card report, this must be done after the card report has been created and only one image can exist for a given card.
+GET URL S3 yang ditandai untuk mengunggah laporan kartu, ini harus dilakukan setelah laporan kartu dibuat dan hanya satu gambar yang ada untuk kartu tertentu.
 
-NOTE: After an image is submitted a server-side process shrinks the image to a standard size and there may be a small time lag of a few seconds before the image goes "live".
+CATATAN: Setelah gambar dikirim, proses sisi server mengkompres gambar ke ukuran standar dan mungkin ada sedikit jeda waktu beberapa detik sebelum gambar tampil secara "live".
 
-Here is a simple call to GET a new signed S3 URL for image upload:
+Berikut ini panggilan sederhana GET untuk URL S3 baru yang telah ditandai untuk unggahan gambar:
 
 ```text
 curl -X GET \
   https://api-server-dev.riskmap.in/cards/HJID8CWN-/images
 ```
 
-Signed S3 URL successfully generated:
+URL S3 yang telah ditandai berhasil dibuat:
 
 ```javascript
 {"signedRequest":"https://riskmap-image-uploads.s3.ap-south-1.amazonaws.com/originals/BJbTHR-Vb.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJFMR3NR7BXZ5X7DA%2F20170629%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20170629T012002Z&X-Amz-Expires=900&X-Amz-Signature=ad10a53555205fa18ecfa07da52eb0349ed1c8bda66fe2de0fa9c445c61b7c62&X-Amz-SignedHeaders=host","url":"https://s3.ap-south-1.amazonaws.com/riskmap-image-uploads/originals/BJbTHR-Vb.jpg"}
