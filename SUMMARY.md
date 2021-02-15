@@ -12,7 +12,7 @@
   * [Jenis Konten](general/encoding.md)
   * [Contoh](general/examples.md)
 * [API](routes/README.md)
-  * [Cards](routes/cards.md)
+  * [Kartu Laporan](routes/cards.md)
   * [Cities](routes/cities.md)
   * [Feeds](routes/feeds.md)
   * [Flood Gauges](routes/floodgauges.md)
