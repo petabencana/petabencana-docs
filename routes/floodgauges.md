@@ -6,7 +6,7 @@ Live flood gauge reports, by default reports will be returned for the last hour.
 
 | Query Parameter | Description | Format | Required |
 | :--- | :--- | :--- | :--- |
-| city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
+| city | Which provinces do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
 | format | Which format should we return results in? \(one of `json`, defaults to `json`\) | String | No |
 | geoformat | What format should geographic results use \(one of `topojson`, `geojson` defaults to `topojson`\) | String | No |
 

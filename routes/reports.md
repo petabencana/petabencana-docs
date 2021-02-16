@@ -1,4 +1,4 @@
-# Reports
+# Crowdsourced Reports
 
 Live disaster reports, by default reports will be returned for the last hour.
 
@@ -6,9 +6,10 @@ Live disaster reports, by default reports will be returned for the last hour.
 
 | Query Parameter | Description | Format | Required |
 | :--- | :--- | :--- | :--- |
-| city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
-| format | Which format should we return results in? \(one of `json`, defaults to `json`\) | String | No |
-| geoformat | What format should geographic results use \(one of `topojson`, `geojson` defaults to `topojson`\) | String | No |
+| admin | Which city do we wish to return infrastructure for? | String | No |
+| format | Which format should we return results in? \(one of `json , xml`, defaults to `json`\) | String | No |
+| disaster | Which disaster should we return the result? \(one of`flood, earthquake, fire, haze, wind volcano,`doesn't filter by default\) |  |  |
+| geoformat | What format should geographic results use \(one of `topojson`, `geojson, cap` defaults to `topojson`\) | String | No |
 | timeperiod | What time period \(in seconds\) to list reports for, must be strictly between 1 and 604800 \(1 week\) | Number | No |
 
 ## GET /reports
@@ -16,7 +17,7 @@ Live disaster reports, by default reports will be returned for the last hour.
 List all current flood reports for Jakarta.
 
 ```text
-curl "https://data.petabencana.id/reports?city=jbd"
+curl "https://data.petabencana.id/reports?admin=ID-JK"
 ```
 
 Results are as follows:
