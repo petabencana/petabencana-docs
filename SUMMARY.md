@@ -15,7 +15,7 @@
   * [Supported Hazards](general/supported-hazards.md)
 * [API](routes/README.md)
   * [Cards](routes/cards.md)
-  * [Admin Boundaries](routes/cities.md)
+  * [Administrative Boundaries](routes/cities.md)
   * [Feeds](routes/feeds.md)
   * [Flood Gauges](routes/floodgauges.md)
   * [Floods](routes/floods.md)
