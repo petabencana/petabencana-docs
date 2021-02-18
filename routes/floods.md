@@ -19,7 +19,7 @@ Numeric codes are used to represent flood states, these are as follows:
 
 | Query Parameter | Description | Format | Required |
 | :--- | :--- | :--- | :--- |
-| city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
+| admin | Which province do we wish to return infrastructure for?  | String | No |
 | format | Which format should we return results in? \(one of `json`, `xml`, defaults to `json`\) | String | No |
 | geoformat | What format should geographic results use \(one of `topojson`, `geojson`, `cap` defaults to `topojson`\) | String | No |
 | minimum\_state | The minimum flood state that should be returned? \(min: `1`, max: `4`\) | Number | No |
@@ -31,11 +31,11 @@ Numeric codes are used to represent flood states, these are as follows:
 List all flooded areas in Jakarta with a flood state of 1 or higher.
 
 ```text
-curl "https://data.petabencana.id/floods?city=jbd&minimum_state=1"
+curl "https://data.petabencana.id/floods?admin=ID-JK&minimum_state=1"
 ```
 {% endtab %}
 
-{% tab title="https" %}
+{% tab title="CAP" %}
 List all flooded areas in Jakarta with a flood state of 1 or higher in CAP format.
 
 ```text

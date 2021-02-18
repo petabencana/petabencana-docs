@@ -15,7 +15,7 @@ Live flood gauge reports, by default reports will be returned for the last hour.
 List all current flood gauge reports for Jakarta.
 
 ```text
-curl "https://data.petabencana.id/floodgauges?city=jbd"
+curl "https://data.petabencana.id/floodgauges?admin=ID-JK"
 ```
 
 Results are as follows:
