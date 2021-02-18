@@ -1,6 +1,6 @@
 # Crowdsourced Reports
 
-Live disaster reports, by default reports will be returned for the last hour.
+Live disaster reports, by default reports will be returned for the last 3 hour.
 
 ## Request Format
 
