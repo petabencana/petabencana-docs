@@ -4,6 +4,8 @@ Live flood information - by city, by flood state \(if required\). Supports a /st
 
 Note that flood states in CAP format have a default expiry time of 6 hours from the time that the API request is made.
 
+Currently this data is only available for Jakarta.
+
 ## Flood State Codes
 
 Numeric codes are used to represent flood states, these are as follows:
@@ -19,7 +21,7 @@ Numeric codes are used to represent flood states, these are as follows:
 
 | Query Parameter | Description | Format | Required |
 | :--- | :--- | :--- | :--- |
-| admin | Which province do we wish to return infrastructure for?  | String | No |
+| admin | Which province do we wish to return infrastructure for? \(see [supported provinces](https://docs.petabencana.id/v/master/general/supported-provinces)\) | String | No |
 | format | Which format should we return results in? \(one of `json`, `xml`, defaults to `json`\) | String | No |
 | geoformat | What format should geographic results use \(one of `topojson`, `geojson`, `cap` defaults to `topojson`\) | String | No |
 | minimum\_state | The minimum flood state that should be returned? \(min: `1`, max: `4`\) | Number | No |

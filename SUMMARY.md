@@ -11,7 +11,7 @@
   * [Error Codes](general/error_codes.md)
   * [Content Types](general/encoding.md)
   * [Examples](general/examples.md)
-  * [Supported Provinces](general/supported-provinces.md)
+  * [Supported Area](general/supported-provinces.md)
   * [Supported Hazards](general/supported-hazards.md)
 * [API](routes/README.md)
   * [Cards](routes/cards.md)
