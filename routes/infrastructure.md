@@ -2,6 +2,8 @@
 
 Locations of local infrastructure including flood gates, pumps and waterways.
 
+Currently this data is only available for Jakarta.
+
 ## Request Format
 
 | URL Parameter | Description | Format | Required |
@@ -10,7 +12,7 @@ Locations of local infrastructure including flood gates, pumps and waterways.
 
 | Query Parameter | Description | Format | Required |
 | :--- | :--- | :--- | :--- |
-| city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
+| admin | Which province do we wish to return infrastructure for? \(currently available for `ID-JK`\) | String | No |
 | format | Which format should we return results in? \(one of `json`, defaults to `json`\) | String | No |
 | geoformat | What format should geographic results use \(one of `topojson`, `geojson` defaults to `topojson`\) | String | No |
 
@@ -19,7 +21,7 @@ Locations of local infrastructure including flood gates, pumps and waterways.
 Return a list of pumps in Jakarta.
 
 ```text
-curl "https://data.petabencana.id/infrastructure/pumps?city=jbd"
+curl "https://data.petabencana.id/infrastructure/pumps?admin=ID-JK"
 ```
 
 Results are as follows:

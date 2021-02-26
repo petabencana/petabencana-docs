@@ -8,7 +8,7 @@ Currently this data is only available for Jakarta.
 
 | Query Parameter | Description | Format | Required |
 | :--- | :--- | :--- | :--- |
-| city | Which provinces do we wish to return infrastructure for? \(currently available for `ID-JK`\) | String | No |
+| city | Which [province](https://docs.petabencana.id/v/master/general/supported-area) do we wish to return infrastructure for? \(currently available for `ID-JK`\) | String | No |
 | format | Which format should we return results in? \(one of `json`, defaults to `json`\) | String | No |
 | geoformat | What format should geographic results use \(one of `topojson`, `geojson` defaults to `topojson`\) | String | No |
 

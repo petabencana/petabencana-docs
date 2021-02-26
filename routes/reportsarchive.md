@@ -1,8 +1,6 @@
 # Reports/Archive
 
-Archive of flood reports \(see [Reports endpoint](reports.md) documentation\), presented as a JSON with all the flood reports received within the specified time period.
-
-Currently this data is only avaialble for Jakarta.
+Archive of disaster reports \(see [Reports endpoint](reports.md) documentation\), presented as a JSON with all the flood reports received within the specified time period.
 
 ## Request Format
 
@@ -10,7 +8,7 @@ Currently this data is only avaialble for Jakarta.
 | :--- | :--- | :--- | :--- |
 | start | Start time for archive period | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
 | end | End time for archive period | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
-| city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
+| admin | Which province do we wish to return the data for? \(see [supported area](https://docs.petabencana.id/v/master/general/supported-area)\) | String | No |
 | geoformat | What format should geographic results use \(one of `topojson`, `geojson` defaults to `topojson`\) | String | No |
 
 Note that time zone must be specified as +/- UTC offset which will require HTML character encoding \(e.g. +0700 becomes %2B0700\).

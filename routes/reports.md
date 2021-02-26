@@ -6,7 +6,7 @@ Live disaster reports, by default reports will be returned for the last 3 hour.
 
 | Query Parameter | Description | Format | Required |
 | :--- | :--- | :--- | :--- |
-| admin | Which city do we wish to return infrastructure for? | String | No |
+| admin | Which province do we wish to return the data for? \(see [supported area](https://docs.petabencana.id/v/master/general/supported-area)\) | String | No |
 | format | Which format should we return results in? \(one of `json , xml`, defaults to `json`\) | String | No |
 | disaster | Which disaster should we return the result? \(one of`flood, earthquake, fire, haze, wind volcano,`doesn't filter by default\) |  |  |
 | geoformat | What format should geographic results use \(one of `topojson`, `geojson, cap` defaults to `topojson`\) | String | No |
