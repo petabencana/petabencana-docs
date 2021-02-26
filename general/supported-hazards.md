@@ -1,4 +1,4 @@
-# Supported Hazards
+# Supported Hazard
 
 1. Flood
 2. Earthquake

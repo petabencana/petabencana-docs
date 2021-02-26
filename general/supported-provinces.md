@@ -1,6 +1,4 @@
-# Supported Area
-
-
+# Supported Provinces
 
 ![](../.gitbook/assets/image.png)
 

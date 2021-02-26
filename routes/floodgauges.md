@@ -2,13 +2,11 @@
 
 Live flood gauge reports, by default reports will be returned for the last hour.
 
-Currently this data is only available for Jakarta.
-
 ## Request Format
 
 | Query Parameter | Description | Format | Required |
 | :--- | :--- | :--- | :--- |
-| city | Which provinces do we wish to return infrastructure for? \(curently available for `ID-JK`\) | String | No |
+| city | Which provinces do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
 | format | Which format should we return results in? \(one of `json`, defaults to `json`\) | String | No |
 | geoformat | What format should geographic results use \(one of `topojson`, `geojson` defaults to `topojson`\) | String | No |
 
