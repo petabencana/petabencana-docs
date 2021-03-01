@@ -1,20 +1,20 @@
-# Stats - Flooded Regions Summary
+# Stats - Rangkuman Wilayah
 
-List of all regions with currently flooded RWs.
+Daftar seluruh wilayah administrasi yang RWnya saat ini terdampak banjir.
 
 ## Request Format
 
 | Query Parameter | Description | Format | Required |
 | :--- | :--- | :--- | :--- |
-| city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
+| admin | Area mana yang laporannya ingin disajikan? \(saat ini hanya mendukung`ID-JK`\) | String | Tidak |
 
 ## GET /stats/floodedRegionsSummary
 
 ```text
-curl "https://data.petabencana.id/stats/floodedRegionsSummary?city=jbd"
+curl "https://data.petabencana.id/stats/floodedRegionsSummary?admin=ID-JK"
 ```
 
-Results are as follows:
+Hasilnya adalah sebagai berikut:
 
 ```javascript
 {

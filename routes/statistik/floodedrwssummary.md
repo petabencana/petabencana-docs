@@ -1,12 +1,12 @@
-# Stats - Flooded RWs Summary
+# Stat - Rangkuman RW Banjir
 
-Count of all RWs by flood height range.
+Perhitungan semua RW terdampak banjir berdasarkan status tinggi banjir.
 
-## Request Format
+## Format Permintaan
 
-| Query Parameter | Description | Format | Required |
+| Parameter Kueri | Deskripsi | Format | Wajib |
 | :--- | :--- | :--- | :--- |
-| city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
+| admin | Area mana yang laporannya ingin disajikan? \(saat ini hanya mendukung`ID-JK`\) | String | Tidak |
 
 ## GET /stats/floodedRWsSummary
 
@@ -14,7 +14,7 @@ Count of all RWs by flood height range.
 curl "https://data.petabencana.id/stats/floodedRWsSummary?city=jbd"
 ```
 
-Results are as follows:
+Hasilnya adalah sebagai berikut:
 
 ```javascript
 {

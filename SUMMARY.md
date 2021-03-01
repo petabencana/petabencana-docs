@@ -27,6 +27,6 @@
   * [Laporan Urun-Daya/Timeseries](routes/laporan-urun-daya-timeseries.md)
   * [Statistik](routes/statistik/README.md)
     * [Stat - Rangkuman Laporan Urun-Daya](routes/statistik/reportssummary.md)
-    * [Stats - Flooded RWs Summary](routes/statistik/floodedrwssummary.md)
-    * [Stats - Flooded Regions Summary](routes/statistik/floodedregionssummary.md)
+    * [Stat - Rangkuman RW Banjir](routes/statistik/floodedrwssummary.md)
+    * [Stats - Rangkuman Wilayah](routes/statistik/floodedregionssummary.md)
 
