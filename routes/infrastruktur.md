@@ -1,28 +1,28 @@
-# Infrastructure
+# Infrastruktur
 
-Locations of local infrastructure including flood gates, pumps and waterways.
+Lokasi infrastruktur lokal seperti pintu air \(`floodgates`\), pompa \(`pumps`\) dan saluran air \(`waterways`\).
 
-## Request Format
+## Format Permintaan
 
-| URL Parameter | Description | Format | Required |
+| Parameter URL | Deskripsi | Format | Wajib |
 | :--- | :--- | :--- | :--- |
-| type | What type of infrastructure do we wish to list?  \(one of `floodgates`, `pumps`, `waterways`\) | String | Yes |
+| type | Tipe infrastruktur apa yang ingin diperoleh daftarnya? \(salah satu antara `floodgates`, `pumps`, `waterways`\) | String | Yes |
 
-| Query Parameter | Description | Format | Required |
+| Parameter Kueri | Deskripsi | Format | Wajib |
 | :--- | :--- | :--- | :--- |
-| city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
-| format | Which format should we return results in? \(one of `json`, defaults to `json`\) | String | No |
-| geoformat | What format should geographic results use \(one of `topojson`, `geojson` defaults to `topojson`\) | String | No |
+| city | Kota mana yang ingin diperoleh data infrastrukturnya? \(saat ini hanya mendukung `ID-JK`\) | String | Tidak |
+| format | Format apa yang diperlukan dari hasil yang diberikan? \(tersedia secara _default_ dalam `json`\) | String | Tidak |
+| geoformat | What format should geographic results use \(one of `topojson`, `geojson` defaults to `topojson`\) Format apa yang diperlukan untuk hasil geografis? \(salah satu antara `topojson`, `geojson`, _default_ ke `topojson`\) | String | Tidak |
 
 ## GET /infrastructure/:type
 
-Return a list of pumps in Jakarta.
+Menyajikan daftar pompa di Jakarta.
 
 ```text
-curl "https://data.petabencana.id/infrastructure/pumps?city=jbd"
+curl "https://data.petabencana.id/infrastructure/pumps?admin=ID-JK"
 ```
 
-Results are as follows:
+Hasilnya adalah sebagai berikut:
 
 ```javascript
 {

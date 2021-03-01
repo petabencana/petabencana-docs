@@ -21,7 +21,7 @@
   * [Area Banjir](routes/areabanjir.md)
   * [Area Banjir/Arsip](routes/areabanjirarsip.md)
   * [Area Banjir/Timeseries](routes/areabanjirtimeseries.md)
-  * [Infrastructure](routes/infrastructure.md)
+  * [Infrastruktur](routes/infrastruktur.md)
   * [Reports](routes/reports.md)
   * [Reports/Archive](routes/reportsarchive.md)
   * [Reports/Timeseries](routes/reportstimeseries.md)
