@@ -1,8 +1,8 @@
 # Statistik
 
-Some summary statistics:
+Beberapa rangkuman statistik:
 
-* [/stats/floodedRegionsSummary](floodedregionssummary.md) :  summary of regions containing flooded RWs
-* [/stats/floodedRWsSummary](floodedrwssummary.md) : summary of flooded RWs
-* [/stats/reportsSummary](reportssummary.md) : summary of reports
+* [/stats/floodedRegionsSummary](floodedregionssummary.md) :  rangkuman wilayah RW yang terdampak banjir berdasarkan status tinggi banjir
+* [/stats/floodedRWsSummary](floodedrwssummary.md) : rangkuman jumlah RW terdampak banjir
+* [/stats/reportsSummary](reportssummary.md) : rangkuman laporan urun daya
 

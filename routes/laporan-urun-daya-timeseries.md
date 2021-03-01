@@ -1,27 +1,27 @@
 # Laporan Urun-Daya/Timeseries
 
-Time series of flood reports \(see [Reports endpoint](laporan-urun-daya.md) documentation\), presented as the count of flood reports every hour within the specified time period. Count is recorded alongside an hourly timestamp in ISO8601 format at UTC+0.
+Rangkaian waktu laporan banjir \(lihat dokumentasi _endpoint_ [Laporan Urun-Daya](https://docs.petabencana.id/routes/laporan-urun-daya)\), disajikan sebagai penghitungan laporan banjir setiap jam dalam periode waktu tertentu. Hitungan dicatat di samping stempel waktu per jam dalam format ISO8601 pada UTC + 0.
 
-## Request Format
+## Format Permintaan
 
-| Query Parameter | Description | Format | Required |
+| Parameter Kueri | Deskripsi | Format | Wajib |
 | :--- | :--- | :--- | :--- |
-| start | Start time for timeseries period | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
-| end | End time for timeseries period | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
+| start | Waktu mulai periode _timeseries_ | String dalam format ISO 8601 \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Ya |
+| end | Waktu akhir periode _timeseries_ | String dalam format ISO 8601 \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Ya |
 
-Note that time zone must be specified as +/- UTC offset which will require HTML character encoding \(e.g. +0700 becomes %2B0700\).
+Perhatikan bahwa zona waktu harus ditentukan sebagai perbedaan waktu +/- UTC yang memerlukan pengkodean karakter HTML \(mis. +0700 menjadi% 2B0700\).
 
 ## Get /reports/timeseries
 
 ## GET /reports/timeseries
 
-Get count of flood reports within specified time period.
+GET \(mendapatkan\) hitungan laporan banjir dalam periode waktu tertentu.
 
 ```text
     curl "https://data.petabencana.id/reports/timeseries?start=2017-11-26T12%3A00%3A00%2B0700&end=2017-11-26T15%3A00%3A00%2B0700"
 ```
 
-Results are as follows:
+Hasilnya adalah sebagai berikut:
 
 ```javascript
     {

@@ -1,13 +1,13 @@
-# Stats - Reports Summary
+# Stat - Rangkuman Laporan Urun-Daya
 
-Count of reports by source \("qlue" for Qlue, "detik" for Detik Pasangmata, or "grasp" being combined Twitter and Telegram\), by default reports will be returned for the last hour.
+Perhitungan laporan urun daya berdasarkan sumber \("qlue" untuk Qlue, "detik" untuk Detik \(Pasangmata\), atau "grasp" untuk laporan dari kombinasi Twitter, Facebook, Telegram dan Website PetaBencana.id\), secara default laporan akan disajikan untuk satu jam terakhir.
 
-## Request Format
+## Format Permintaan
 
-| Query Parameter | Description | Format | Required |
+| Parameter Kueri | Deskripsi | Format | Wajib |
 | :--- | :--- | :--- | :--- |
-| city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
-| timeperiod | What time period \(in seconds\) to list reports for, must be strictly between 1 and 604800 \(1 week\) | Number | No |
+| admin | Area mana yang laporannya ingin disajikan? \(lihat [Area Didukung](https://docs.petabencana.id/general/area-didukung)\) | String | Tidak |
+| timeperiod | Periode waktu berapa lama \(dalam detik\) yang dibutuhkan untuk menyajikan laporan, harus diantara 1 dan 604800 \(1 minggu\) | Number | Tidak |
 
 ## GET /stats/getReportsSummary.md
 
@@ -15,7 +15,7 @@ Count of reports by source \("qlue" for Qlue, "detik" for Detik Pasangmata, or "
 curl "https://data.petabencana.id/stats/reportsSummary?city=jbd"
 ```
 
-Results are as follows:
+Hasilnya adalah sebagai berikut:
 
 ```javascript
 {
