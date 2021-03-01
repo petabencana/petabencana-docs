@@ -1,33 +1,29 @@
 # Area Banjir/Arsip
 
-Archive of flooded areas \(see [Floods endpoint](areabanjir.md) documentation\), presented as the maximum flood state recorded for all flood affected areas within the specified time period. Maximum state is recorded alongside area id. Use the Floods endpoint to get geospatial boundaries of individual areas.
-
-Currently this data is only available for Jakarta.
-
-Arsip area banjir \(lihat dokumentasi endpoint Area Banjir\), disajikan sebagai status banjir maksimum yang tercatat untuk semua daerah yang terdampak banjir dalam periode waktu tertentu. Keadaan maksimum dicatat di samping id area. Gunakan endpoint area banjir untuk mendapatkan batas geospasial dari masing-masing wilayah.
+Arsip area banjir \(lihat dokumentasi [_endpoint_ Area Banjir](https://docs.petabencana.id/routes/areabanjir)\), disajikan sebagai status banjir maksimum yang tercatat untuk semua daerah yang terdampak banjir dalam periode waktu tertentu. Status maksimum area banjir dicatat di samping id area. Gunakan _endpoint_ Area Banjir untuk mendapatkan batas geospasial dari masing-masing wilayah.
 
 ‌Saat ini data yang tersedia hanya untuk wilayah Jakarta.
 
-## Request Format
+## Format Permintaan
 
-| Query Parameter | Description | Format | Required |
+| Parameter Kueri | Deskripsi | Format | Wajib |
 | :--- | :--- | :--- | :--- |
-| start | Start time for archive period | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
-| end | End time for archive period | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
+| start | Waktu mulai periode arsip | String dalam format ISO 8601 \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Ya |
+| end | Waktu akhir periode arsip | String dalam format ISO 8601 \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Ya |
 
-Note that time zone must be specified as +/- UTC offset which will require HTML character encoding \(e.g. +0700 becomes %2B0700\).
+Perhatikan bahwa zona waktu harus ditentukan sebagai perbedaan waktu +/- UTC yang memerlukan pengkodean karakter HTML \(mis. +0700 menjadi %2B0700\).
 
 ## Get /floods/archive
 
 ## GET /floods
 
-List all flooded areas in Jakarta with a flood state of 1 or higher.
+Daftar semua area terdampak banjir di Jakarta dengan status banjir 1 atau lebih tinggi.
 
 ```text
 curl "https://data.petabencana.id/floods/archive?start=2017-06-07T00:00:00%2B0700&end=2017-06-08T23:00:00%2B0700"
 ```
 
-Results are as follows:
+Hasilnya adalah sebagai berikut:
 
 ```javascript
     {
