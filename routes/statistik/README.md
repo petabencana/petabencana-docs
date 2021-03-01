@@ -1,4 +1,4 @@
-# Stats
+# Statistik
 
 Some summary statistics:
 

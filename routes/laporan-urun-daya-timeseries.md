@@ -1,4 +1,4 @@
-# Reports/Timeseries
+# Laporan Urun-Daya/Timeseries
 
 Time series of flood reports \(see [Reports endpoint](laporan-urun-daya.md) documentation\), presented as the count of flood reports every hour within the specified time period. Count is recorded alongside an hourly timestamp in ISO8601 format at UTC+0.
 

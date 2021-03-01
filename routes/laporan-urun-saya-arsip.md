@@ -1,31 +1,29 @@
-# Reports/Archive
+# Laporan Urun-Daya/Arsip
 
-Archive of flood reports \(see [Reports endpoint](laporan-urun-daya.md) documentation\), presented as a JSON with all the flood reports received within the specified time period.
+Arsip laporan banjir \(lihat dokumentasi _endpoint_ [Laporan Urun-Daya](https://docs.petabencana.id/routes/laporan-urun-daya)\), disajikan sebagai JSON berupa semua laporan banjir yang diterima dalam periode waktu tertentu.
 
-Currently this data is only avaialble for Jakarta.
+## Format Permintaan
 
-## Request Format
-
-| Query Parameter | Description | Format | Required |
+| Parameter Kueri | Deskripsi | Format | Wajib |
 | :--- | :--- | :--- | :--- |
-| start | Start time for archive period | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
-| end | End time for archive period | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
-| city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
-| geoformat | What format should geographic results use \(one of `topojson`, `geojson` defaults to `topojson`\) | String | No |
+| start | Waktu mulai periode arsip | String dalam format ISO 8601 \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Ya |
+| end | Waktu akhir periode arsip | String dalam format ISO 8601 \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Ya |
+| city | Area mana yang laporannya ingin disajikan? \(lihat [Area Didukung](https://docs.petabencana.id/general/area-didukung)\) | String | Tidak |
+| geoformat | Format apa yang diperlukan untuk hasil geografis? \(salah satu antara `topojson`, `geojson`, _default_ ke `topojson`\) | String | Tidak |
 
-Note that time zone must be specified as +/- UTC offset which will require HTML character encoding \(e.g. +0700 becomes %2B0700\).
+Perhatikan bahwa zona waktu harus ditentukan sebagai perbedaan waktu +/- UTC yang memerlukan pengkodean karakter HTML \(mis. +0700 menjadi% 2B0700\).
 
 ## Get /reports/archive
 
 ## GET /reports
 
-List flood reports in Jabodetabek received within specified time window
+Daftar laporan banjir di Jabodetabek yang diterima dalam jangka waktu tertentu
 
 ```text
 curl "https://data.petabencana.id/reports/archive?start=2017-12-04T00%3A00%3A00%2B0700&end=2017-12-06T05%3A00%3A00%2B0700&geoformat=geojson"
 ```
 
-Results are as follows:
+Hasilnya adalah sebagai berikut:
 
 ```javascript
 {
