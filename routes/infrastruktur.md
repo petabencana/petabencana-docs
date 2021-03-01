@@ -10,9 +10,9 @@ Lokasi infrastruktur lokal seperti pintu air \(`floodgates`\), pompa \(`pumps`\)
 
 | Parameter Kueri | Deskripsi | Format | Wajib |
 | :--- | :--- | :--- | :--- |
-| city | Kota mana yang ingin diperoleh data infrastrukturnya? \(saat ini hanya mendukung `ID-JK`\) | String | Tidak |
+| city | Area mana yang ingin diperoleh data infrastrukturnya? \(saat ini hanya mendukung `ID-JK`\) | String | Tidak |
 | format | Format apa yang diperlukan dari hasil yang diberikan? \(tersedia secara _default_ dalam `json`\) | String | Tidak |
-| geoformat | What format should geographic results use \(one of `topojson`, `geojson` defaults to `topojson`\) Format apa yang diperlukan untuk hasil geografis? \(salah satu antara `topojson`, `geojson`, _default_ ke `topojson`\) | String | Tidak |
+| geoformat | Format apa yang diperlukan untuk hasil geografis? \(salah satu antara `topojson`, `geojson`, _default_ ke `topojson`\) | String | Tidak |
 
 ## GET /infrastructure/:type
 

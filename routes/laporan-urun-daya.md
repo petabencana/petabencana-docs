@@ -1,25 +1,25 @@
-# Reports
+# Laporan Urun-Daya
 
-Live disaster reports, by default reports will be returned for the last hour.
+Laporan bencana urun daya secara realtime, secara default laporan akan disajikan selama periode satu jam terakhir.
 
-## Request Format
+## Format Permintaan
 
-| Query Parameter | Description | Format | Required |
+| Parameter Kueri | Deskripsi | Format | Wajib |
 | :--- | :--- | :--- | :--- |
-| city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
-| format | Which format should we return results in? \(one of `json`, defaults to `json`\) | String | No |
-| geoformat | What format should geographic results use \(one of `topojson`, `geojson` defaults to `topojson`\) | String | No |
-| timeperiod | What time period \(in seconds\) to list reports for, must be strictly between 1 and 604800 \(1 week\) | Number | No |
+| city | Area mana yang laporannya ingin disajikan? \(lihat [Area Didukung](https://docs.petabencana.id/general/area-didukung)\) | String | No |
+| format | Format apa yang diperlukan dari hasil yang diberikan? \(tersedia secara _default_ dalam `json`\) | String | No |
+| geoformat | Format apa yang diperlukan untuk hasil geografis? \(salah satu antara `topojson`, `geojson`, _default_ ke `topojson`\) | String | No |
+| timeperiod | Periode waktu berapa lama \(dalam detik\) yang dibutuhkan untuk menyajikan laporan, harus diantara 1 dan 604800 \(1 minggu\) | Number | No |
 
 ## GET /reports
 
-List all current flood reports for Jakarta.
+Daftar semua laporan banjir terkini untuk Jakarta.
 
 ```text
 curl "https://data.petabencana.id/reports?city=jbd"
 ```
 
-Results are as follows:
+Hasilnya adalah sebagai berikut:
 
 ```javascript
 {

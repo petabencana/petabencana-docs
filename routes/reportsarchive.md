@@ -1,6 +1,6 @@
 # Reports/Archive
 
-Archive of flood reports \(see [Reports endpoint](reports.md) documentation\), presented as a JSON with all the flood reports received within the specified time period.
+Archive of flood reports \(see [Reports endpoint](laporan-urun-daya.md) documentation\), presented as a JSON with all the flood reports received within the specified time period.
 
 Currently this data is only avaialble for Jakarta.
 
