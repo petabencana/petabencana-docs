@@ -8,7 +8,7 @@ Live disaster reports, by default reports will be returned for the last 3 hour.
 | :--- | :--- | :--- | :--- |
 | admin | Which province do we wish to return the data for? \(see [supported area](https://docs.petabencana.id/v/master/general/supported-area)\) | String | No |
 | format | Which format should we return results in? \(one of `json , xml`, defaults to `json`\) | String | No |
-| disaster | Which disaster should we return the result? \(one of`flood, earthquake, fire, haze, wind volcano,`doesn't filter by default\) |  |  |
+| disaster | Which [disaster](https://docs.petabencana.id/v/master/general/supported-hazards) should we return the result? \(one of`flood, earthquake, fire, haze, wind volcano,`doesn't filter by default\) |  |  |
 | geoformat | What format should geographic results use \(one of `topojson`, `geojson, cap` defaults to `topojson`\) | String | No |
 | timeperiod | What time period \(in seconds\) to list reports for, must be strictly between 1 and 604800 \(1 week\) | Number | No |
 
