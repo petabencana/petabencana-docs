@@ -1,0 +1,2 @@
+# Jenis Bencana
+

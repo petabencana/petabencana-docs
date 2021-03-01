@@ -11,6 +11,8 @@
   * [Kode Eror](general/error_codes.md)
   * [Jenis Konten](general/encoding.md)
   * [Contoh](general/examples.md)
+  * [Area Didukung](general/area-didukung.md)
+  * [Jenis Bencana](general/jenis-bencana.md)
 * [API](routes/README.md)
   * [Kartu Laporan](routes/cards.md)
   * [Batas Administrasi](routes/cities.md)
