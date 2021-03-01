@@ -19,7 +19,7 @@
   * [Umpan](routes/feeds.md)
   * [Pemantauan TMA](routes/pemantauantma.md)
   * [Area Banjir](routes/floods.md)
-  * [Floods/Archive](routes/floodsarchive.md)
+  * [Area Banjir/Arsip](routes/floodsarchive.md)
   * [Floods/Timeseries](routes/floodstimeseries.md)
   * [Infrastructure](routes/infrastructure.md)
   * [Reports](routes/reports.md)
