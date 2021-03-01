@@ -1,50 +1,50 @@
-# Floods
+# Area Banjir
 
-Live flood information - by city, by flood state \(if required\). Supports a /states endpoint which is non-geographic and simply gives the state of flooded areas as well as a geographic endpoint which will give flooded areas subject to a minimum\_state or all areas together with their current flood status. In addition to [topojson](https://github.com/topojson/topojson/wiki) and [geojson](http://geojson.org/) this endpoint supports the [Common Alerting Protocol \(CAP\)](https://en.wikipedia.org/wiki/Common_Alerting_Protocol).
+Informasi banjir realtime - berdasarkan kota dan status banjir \(jika diperlukan\). Mendukung _endpoint_ /states yang non-geografis dan hanya memberikan status wilayah terdampak banjir serta _endpoint_ geografis yang akan memberikan wilayah tergenang dengan _minimum\_state_ atau semua wilayah dengan status banjirnya saat ini. Selain [topojson](https://github.com/topojson/topojson/wiki) dan [geojson](http://geojson.org/), titik akhir ini mendukung [Common Alerting Protocol \(CAP\)](https://en.wikipedia.org/wiki/Common_Alerting_Protocol). 
 
-Note that flood states in CAP format have a default expiry time of 6 hours from the time that the API request is made.
+Perhatikan bahwa status banjir dalam format CAP memiliki waktu kadaluarsa _default_ 6 jam sejak permintaan API dibuat.
 
-## Flood State Codes
+## Kode Status Banjir
 
-Numeric codes are used to represent flood states, these are as follows:
+Kode numerik yang digunakan untuk merepresentasikan kondisi banjir adalah sebagai berikut:
 
-| Code | Severity | Description |
+| Kode | Keparahan | Deskripsi |
 | :--- | :--- | :--- |
-| 1 | Unknown | AN UNKNOWN LEVEL OF FLOODING - USE CAUTION - |
-| 2 | Minor | FLOODING OF BETWEEN 10 and 70 CENTIMETERS |
-| 3 | Moderate | FLOODING OF BETWEEN 71 and 150 CENTIMETERS |
-| 4 | Severe | FLOODING OF OVER 150 CENTIMETERS |
+| 1 | _Unknown_ | KETINGGIAN BANJIR TIDAK DIKETAHUI - HATI-HATI - |
+| 2 | _Minor_ | BANJIR ANTARA 10 hingga 70 SENTIMETER |
+| 3 | _Moderate_ | BANJIR ANTARA 71 hingga 150 SENTIMETER |
+| 4 | _Severe_ | BANJIR LEBIH DARI 150 SENTIMETER |
 
-## Request Format
+## Format Permintaan
 
-| Query Parameter | Description | Format | Required |
+| Parameter Kueri | Deskripsi | Format | Wajib |
 | :--- | :--- | :--- | :--- |
-| city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
-| format | Which format should we return results in? \(one of `json`, `xml`, defaults to `json`\) | String | No |
-| geoformat | What format should geographic results use \(one of `topojson`, `geojson`, `cap` defaults to `topojson`\) | String | No |
-| minimum\_state | The minimum flood state that should be returned? \(min: `1`, max: `4`\) | Number | No |
+| admin | Area mana yang laporannya ingin disajikan? \(saat ini hanya mendukung`ID-JK`\) | String | Tidak |
+| format | Format apa yang diperlukan dari hasil yang disajikan? \(salah satu `json`, `xml`, default ke `json`\) | String | Tidak |
+| geoformat | Format apa yang diperlukan untuk hasil geografis? \(salah satu antara `topojson`, `geojson`, `cap`, default ke `topojson`\) | String | Tidak |
+| minimum\_state | Berapa status banjir minimal yang ingin ditampilkan? \(min: `1`, maks: `4`\) | Number | Tidak |
 
 ## GET /floods
 
 {% tabs %}
 {% tab title="https" %}
-List all flooded areas in Jakarta with a flood state of 1 or higher.
+Daftar semua wilayah terdampak banjir di Jakarta dengan status banjir 1 atau lebih tinggi.
 
 ```text
-curl "https://data.petabencana.id/floods?city=jbd&minimum_state=1"
+curl "https://data.petabencana.id/floods?admin=ID-JK&minimum_state=1"
 ```
 {% endtab %}
 
 {% tab title="https" %}
-List all flooded areas in Jakarta with a flood state of 1 or higher in CAP format.
+Daftar semua wilayah terdampak banjir di Jakarta dengan status banjir 1 atau lebih tinggi dalam format CAP.
 
 ```text
-curl "https://data.petabencana.id/floods?city=jbd&minimum_state=1&format=xml&geoformat=cap"
+curl "https://data.petabencana.id/floods?admin=ID-JK&minimum_state=1&format=xml&geoformat=cap"
 ```
 {% endtab %}
 {% endtabs %}
 
-Results are as follows:
+Hasilnya adalah sebagai berikut:
 
 ```javascript
 {
@@ -291,7 +291,7 @@ Results are as follows:
 }
 ```
 
-Results are as follows:
+Hasilnya adalah sebagai berikut:
 
 ```markup
 <?xml version="1.0"?>
@@ -338,13 +338,13 @@ Results are as follows:
 
 ## GET /floods/states
 
-List all flooded area states in Jakarta with a flood state of 1 or higher.
+Daftar semua status area terdampak banjir di Jakarta dengan status banjir 1 atau lebih tinggi.
 
 ```text
 curl "https://data.petabencana.id/floods/states?city=jbd&minimum_state=1"
 ```
 
-Results are as follows:
+Hasilnya adalah sebagai berikut:
 
 ```javascript
 {
@@ -361,7 +361,7 @@ Results are as follows:
 
 ## PUT /floods/:localAreaId
 
-PUT a new flood state in the system for a given local area \(secure, requires authorisation token\).
+PUT \(Menambahkan\) status banjir baru dalam sistem untuk area lokal tertentu \(aman, memerlukan token otorisasi\).
 
 ```text
 curl -X PUT -H "Content-Type: application/json" -d '{
@@ -369,7 +369,7 @@ curl -X PUT -H "Content-Type: application/json" -d '{
 }' "https://data.petabencana.id/floods/5"
 ```
 
-Results are as follows:
+Hasilnya adalah sebagai berikut:
 
 ```javascript
 {
@@ -381,13 +381,13 @@ Results are as follows:
 
 ## DELETE /floods/:localAreaId
 
-Clears the flood state entirely for a given local area \(secure, requires authorisation token\).
+Menghapus seluruh status banjir untuk area lokal tertentu \(aman, memerlukan token otorisasi\).
 
 ```text
 curl -X DELETE "https://data.petabencana.id/floods/5"
 ```
 
-Results are as follows:
+Hasilnya adalah sebagai berikut:
 
 ```javascript
 {
