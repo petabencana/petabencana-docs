@@ -1,24 +1,24 @@
 # Pemantauan TMA
 
-Live flood gauge reports, by default reports will be returned for the last hour.
+Laporan pemantauan tinggi muka air secara _live_, secara default laporan akan ditampilkan untuk satu jam terakhir.
 
-## Request Format
+## Format Permintaan
 
-| Query Parameter | Description | Format | Required |
+| Parameter Kueri | Deskripsi | Format | Wajib |
 | :--- | :--- | :--- | :--- |
-| city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
-| format | Which format should we return results in? \(one of `json`, defaults to `json`\) | String | No |
-| geoformat | What format should geographic results use \(one of `topojson`, `geojson` defaults to `topojson`\) | String | No |
+| admin | Area mana yang infrastrukturnya ingin disediakan? \(saat ini hanya mendukung`ID-JK`\) | String | Tidak |
+| format | Format apa yang diperlukan dari hasil yang diberikan? \(tersedia secara default dalam `json`\) | String | Tidak |
+| geoformat | Format apa yang diperlukan untuk hasil geografis? \(salah satu antara `topojson`, `geojson`, default ke `topojson`\) | String | Tidak |
 
 ## GET /floodgauges
 
-List all current flood gauge reports for Jakarta.
+Daftar semua laporan alat ukur tinggi muka air saat ini untuk Jakarta.
 
 ```text
-curl "https://data.petabencana.id/floodgauges?city=jbd"
+curl "https://data.petabencana.id/floodgauges?admin=ID-JK"
 ```
 
-Results are as follows:
+Hasilnya adalah sebagai berikut:
 
 ```javascript
 {
