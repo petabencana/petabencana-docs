@@ -1,6 +1,6 @@
 # Floods/Timeseries
 
-Time series of flooded areas \(see [Floods endpoint](floods.md) documentation\), presented as the count of flood affected areas every hour within the specified time period. Count is recorded alongside an hourly timestamp in ISO8601 format at UTC+0.
+Time series of flooded areas \(see [Floods endpoint](areabanjir.md) documentation\), presented as the count of flood affected areas every hour within the specified time period. Count is recorded alongside an hourly timestamp in ISO8601 format at UTC+0.
 
 Currently this data is only available for Jakarta.
 

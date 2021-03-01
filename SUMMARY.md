@@ -18,7 +18,7 @@
   * [Batas Administrasi](routes/cities.md)
   * [Umpan](routes/feeds.md)
   * [Pemantauan TMA](routes/pemantauantma.md)
-  * [Area Banjir](routes/floods.md)
+  * [Area Banjir](routes/areabanjir.md)
   * [Area Banjir/Arsip](routes/floodsarchive.md)
   * [Floods/Timeseries](routes/floodstimeseries.md)
   * [Infrastructure](routes/infrastructure.md)
