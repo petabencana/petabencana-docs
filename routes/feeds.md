@@ -1,23 +1,23 @@
-# Feeds
+# Umpan
 
-Petabencana utilises data feeds from a number of third party sources. This endpoint allows the creation of data into the system for authorised users. Note: [authentication](https://docs.petabencana.id/general/authentication.html) is required to post data through the /feeds endpoint.
+Petabencana memanfaatkan umpan data dari sejumlah sumber pihak ketiga. Endpoint ini memungkinkan pembuatan data ke dalam sistem untuk pengguna yang berwenang. Catatan: [autentikasi](https://docs.petabencana.id/general/authentication) diperlukan untuk mengirim data melalui endpoint /feeds \(/umpan\).
 
 ## POST /feeds/qlue
 
-Add a report to the system from [Qlue](http://www.qlue.co.id/). The following attributes are supported for Qlue reports:
+Menambahkan laporan ke sistem dari [Qlue](https://www.qlue.co.id/). Atribut-atribut yang didukung untuk laporan Qlue:
 
-| Attribute | Description | Format | Required |
+| Atribut | Deskripsi | Format | Wajib |
 | :--- | :--- | :--- | :--- |
-| post\_id | Unique qlue identifier for the report | Integer | Yes |
-| created\_at | Date and time the card was created | Date \([ISO 8601](http://www.iso.org/iso/home/standards/iso8601.htm)\) | Yes |
-| title | The title of the report being filed | String | No |
-| text | Description of the disaster event | String | No |
-| image\_url | URL of the associated image | String | No |
-| qlue\_city | From which city was the report generated \(must be one of `jabodetabek`, `bandung`, `surabaya`\) | String | Yes |
-| disaster\_type | What type of disaster is being reported \(currently only `flood`is supported\) | String | Yes |
-| location | Geographic location of the disaster event | Lat/Long in [ESPG:4326](http://spatialreference.org/ref/epsg/wgs-84/) | Yes |
+| post\_id | Pengenal unik untuk laporan Qlue | Integer | Ya |
+| created\_at | Tanggal dan jam kartu dibuat | Date \([ISO 8601](http://www.iso.org/iso/home/standards/iso8601.htm)\) | Ya |
+| title | Judul laporan yang dimasukkan | String | Tidak |
+| text | Deskripsi dari kejadian bencana | String | Tidak |
+| image\_url | URL dari gambar terkait | String | Tidak |
+| qlue\_city | Dari area mana laporan berasal? \(lihat Area Didukung\) | String | Ya |
+| disaster\_type | Jenis bencana apa yang dilaporkan? \(Saat ini hanya mendukung bencana `flood /`banjir\) | String | Ya |
+| location | Lokasi geografis dari kejadian bencana | Lat/Long in [ESPG:4326](http://spatialreference.org/ref/epsg/wgs-84/) | Ya |
 
-Here is a simple call to POST a new Qlue report:
+Berikut adalah panggilan sederhana untuk POST laporan baru dari Qlue:
 
 ```text
 curl -X POST -H "X-Api-Key: API_KEY_GOES_HERE" -d '{
@@ -34,7 +34,7 @@ curl -X POST -H "X-Api-Key: API_KEY_GOES_HERE" -d '{
 }' "https://data.petabencana.id/feeds/qlue"
 ```
 
-Report was successfully created:
+Laporan telah berhasil dibuat:
 
 ```javascript
 {
@@ -43,7 +43,7 @@ Report was successfully created:
 }
 ```
 
-The request was successful however the report already exists:
+Permintaan telah berhasil namun laporannya sudah ada:
 
 ```javascript
 {
