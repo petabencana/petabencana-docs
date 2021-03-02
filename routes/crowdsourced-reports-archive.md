@@ -1,6 +1,6 @@
-# Reports/Archive
+# Crowdsourced Reports/Archive
 
-Archive of disaster reports \(see [Reports endpoint](reports.md) documentation\), presented as a JSON with all the flood reports received within the specified time period.
+Archive of disaster reports \(see [Reports endpoint](crowdsourced-reports.md) documentation\), presented as a JSON with all the flood reports received within the specified time period.
 
 ## Request Format
 

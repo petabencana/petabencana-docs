@@ -1,6 +1,6 @@
-# Floods/Archive
+# Flooded Area/Archive
 
-Archive of flooded areas \(see [Floods endpoint](floods.md) documentation\), presented as the maximum flood state recorded for all flood affected areas within the specified time period. Maximum state is recorded alongside area id. Use the Floods endpoint to get geospatial boundaries of individual areas.
+Archive of flooded areas \(see [Floods endpoint](flooded-area.md) documentation\), presented as the maximum flood state recorded for all flood affected areas within the specified time period. Maximum state is recorded alongside area id. Use the Floods endpoint to get geospatial boundaries of individual areas.
 
 Currently this data is only available for Jakarta.
 

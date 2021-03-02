@@ -1,4 +1,4 @@
-# Floods
+# Flooded Area
 
 Live flood information - by city, by flood state \(if required\). Supports a /states endpoint which is non-geographic and simply gives the state of flooded areas as well as a geographic endpoint which will give flooded areas subject to a minimum\_state or all areas together with their current flood status. In addition to [topojson](https://github.com/topojson/topojson/wiki) and [geojson](http://geojson.org/) this endpoint supports the [Common Alerting Protocol \(CAP\)](https://en.wikipedia.org/wiki/Common_Alerting_Protocol).
 
