@@ -16,7 +16,7 @@ Laporan bencana urun daya secara realtime, secara default laporan akan disajikan
 Daftar semua laporan banjir terkini untuk Jakarta.
 
 ```text
-curl "https://data.petabencana.id/reports?city=jbd"
+curl "https://data.petabencana.id/reports?admin=ID-JK"
 ```
 
 Hasilnya adalah sebagai berikut:
