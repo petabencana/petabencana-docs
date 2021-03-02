@@ -8,7 +8,7 @@ Archive of disaster reports \(see [Reports endpoint](crowdsourced-reports.md) do
 | :--- | :--- | :--- | :--- |
 | start | Start time for archive period | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
 | end | End time for archive period | String in ISO 8601 format \(YYYY-MM-DDTHH:mm:ss+ZZZZ | Yes |
-| admin | Which province do we wish to return the data for? \(see [supported area](https://docs.petabencana.id/v/master/general/supported-area)\) | String | No |
+| admin | Which province do we wish to return the reports for? \(see [supported area](https://docs.petabencana.id/v/master/general/supported-area)\) | String | No |
 | geoformat | What format should geographic results use \(one of `topojson`, `geojson` defaults to `topojson`\) | String | No |
 
 Note that time zone must be specified as +/- UTC offset which will require HTML character encoding \(e.g. +0700 becomes %2B0700\).
