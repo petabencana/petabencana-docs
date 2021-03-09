@@ -29,7 +29,7 @@ Numeric codes are used to represent flood states, these are as follows:
 ## GET /floods
 
 {% tabs %}
-{% tab title="https" %}
+{% tab title="Geo" %}
 List all flooded areas in Jakarta with a flood state of 1 or higher.
 
 ```text
