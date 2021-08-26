@@ -20,6 +20,38 @@ Petabencana report cards for disaster events. Note: [authentication](https://doc
 
 Card data requires the object `report_type` to exist. Where `disaster_type` is set to 'flood' then the object `flood_depth` should also exist adjacent to `report_type`. Where the `disaster_type` is 'prep' then `report_type` should be one of the types as specified in server config.js.
 
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Disaster Type</th>
+      <th style="text-align:left">Card data fields (card_data)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">flood</td>
+      <td style="text-align:left">
+        <p>flood_depth: Level or Depth of the flood water in meters</p>
+        <p>report_type: should be &apos;flood&apos;</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">wind</td>
+      <td style="text-align:left">
+        <p>impact: value between 0 and 2 based on the extremeness of the the wind</p>
+        <p>
+          <br />0 for Low Disruption</p>
+        <p>1 for Medium Disruption</p>
+        <p>2 for High Disruption</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+    </tr>
+  </tbody>
+</table>
+
 For example a card with flood data including flood\_depth:
 
 ```javascript

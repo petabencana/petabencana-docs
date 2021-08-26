@@ -12,7 +12,7 @@
   * [Content Types](general/encoding.md)
   * [Examples](general/examples.md)
   * [Supported Area](general/supported-area.md)
-  * [Supported Hazard](general/supported-hazards.md)
+  * [Supported Hazards](general/supported-hazards.md)
 * [API](routes/README.md)
   * [Cards](routes/cards.md)
   * [Administrative Boundaries](routes/cities.md)
