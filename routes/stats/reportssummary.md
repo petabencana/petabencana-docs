@@ -9,7 +9,7 @@ Count of reports by source \("qlue" for Qlue, "detik" for Detik Pasangmata, or "
 | city | Which city do we wish to return infrastructure for? \(one of `bdg`, `jbd`, `sby`\) | String | No |
 | timeperiod | What time period \(in seconds\) to list reports for, must be strictly between 1 and 604800 \(1 week\) | Number | No |
 
-## GET /stats/getReportsSummary.md
+## GET /stats/getReportsSummary
 
 ```text
 curl "https://data.petabencana.id/stats/reportsSummary?city=jbd"

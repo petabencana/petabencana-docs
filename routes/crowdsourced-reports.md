@@ -14,7 +14,11 @@ Live disaster reports, by default reports will be returned for the last 3 hour.
 
 ## GET /reports
 
-List all current flood reports for Jakarta.
+List all the current reports from Indonesia
+
+
+
+List all current reports for Jakarta.
 
 ```text
 curl "https://data.petabencana.id/reports?admin=ID-JK"

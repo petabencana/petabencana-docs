@@ -17,10 +17,10 @@ Note that time zone must be specified as +/- UTC offset which will require HTML 
 
 ## GET /reports
 
-List flood reports in Jabodetabek received within specified time window
+List flood reports in Jakarta received within specified time window
 
 ```text
-curl "https://data.petabencana.id/reports/archive?start=2017-12-04T00%3A00%3A00%2B0700&end=2017-12-06T05%3A00%3A00%2B0700&geoformat=geojson"
+curl "https://data.petabencana.id/reports/archive?start=2017-12-04T00%3A00%3A00%2B0700&end=2017-12-06T05%3A00%3A00%2B0700&geoformat=geojson&admin=ID-JK"
 ```
 
 Results are as follows:
@@ -50,7 +50,7 @@ Results are as follows:
                     "disaster_type": "flood",
                     "report_data": null,
                     "tags": {
-                        "instance_region_code": "jbd",
+                        "instance_region_code": "ID-JK",
                         "local_area_id": "782"
                     },
                     "title": " ",
