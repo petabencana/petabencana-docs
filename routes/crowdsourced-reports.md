@@ -14,15 +14,11 @@ Live disaster reports, by default reports will be returned for the last 3 hour.
 
 ## GET /reports
 
-List all current reports from Indonesia
-
-```javascript
-curl "https://data.petabencana.id/reports?"
-```
+List all the current reports from Indonesia
 
 
 
-List all current reports from Jakarta.
+List all current reports for Jakarta.
 
 ```text
 curl "https://data.petabencana.id/reports?admin=ID-JK"
@@ -51,7 +47,7 @@ Results are as follows:
               "disaster_type": "flood",
               "report_data": null,
               "tags": {
-                "instance_region_code": "ID-JK",
+                "instance_region_code": "jbd",
                 "local_area_id": "350"
               },
               "title": " ",
