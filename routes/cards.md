@@ -56,8 +56,7 @@ Card data requires the object `report_type` to exist. Where `disaster_type` is s
       <td style="text-align:left">Earthquake</td>
       <td style="text-align:left">structure</td>
       <td style="text-align:left">
-        <p><b>accessabilityFailure: </b>the level of structure damage affected by
-          earthquake</p>
+        <p><b>structureFailure: </b>the level of structure damage affected by earthquake</p>
         <p></p>
         <p>0 : Cracking
           <br />1 : Partially Collapse
@@ -69,6 +68,7 @@ Card data requires the object `report_type` to exist. Where `disaster_type` is s
       <td style="text-align:left">wind</td>
       <td style="text-align:left">
         <p><b>impact</b>: level of disruption caused by extreme wind</p>
+        <p></p>
         <p>0 : Low Disruption
           <br />1 : Medium Disruption
           <br />2 : High Disruption</p>
@@ -80,11 +80,13 @@ Card data requires the object `report_type` to exist. Where `disaster_type` is s
       <td style="text-align:left">
         <p><b>visibility</b>: the distance one can see as determined by light and
           weather conditions</p>
+        <p></p>
         <p>0: can see but need to wear a mask</p>
         <p>1: can see but not clean enough to drive</p>
         <p>2: can barely see, too dangerous to go out</p>
         <p></p>
         <p><b>airQuality</b>: described by symptoms felt by humans</p>
+        <p></p>
         <p>0 or 1: Poor Air Quality
           <br />2: Severe Air Quality
           <br />3 or 4 : Hazardous Air Quality</p>
