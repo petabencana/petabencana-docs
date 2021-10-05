@@ -15,7 +15,6 @@
   * [Jenis Bencana](general/jenis-bencana.md)
 * [API](routes/README.md)
   * [Kartu Laporan](routes/kartu-laporan.md)
-  * [Batas Administrasi](routes/admin.md)
   * [Umpan](routes/umpan.md)
   * [Pemantauan TMA](routes/pemantauan-tma.md)
   * [Area Banjir](routes/area-banjir.md)
