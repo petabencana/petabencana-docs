@@ -8,7 +8,7 @@ PetaBencana.id gathers, sorts, and visualizes data using specially developed Cog
 
 ## Petabencana Data API
 
-Petabencana is backed by a data [API](https://en.wikipedia.org/wiki/Application_programming_interface) exposing a number of public and private endpoints. The documentation that follows allows developers to get up and running. The project is fully open source and the code is available in the [PetaBencana GitHub](https://github.com/petabencana/). The architectural diagram is available in different formats:
+Petabencana is backed by a data [API](https://en.wikipedia.org/wiki/Application\_programming\_interface) exposing a number of public and private endpoints. The documentation that follows allows developers to get up and running. The project is fully open source and the code is available in the [PetaBencana GitHub](https://github.com/petabencana/). The architectural diagram is available in different formats:
 
 * [PDF](https://github.com/petabencana/petabencana-docs/tree/d8b3cac5b3bc2a65abd49d874bf9c5798e93eb97/petabencana.pdf)
 * [Visio XML](https://github.com/petabencana/petabencana-docs/tree/d8b3cac5b3bc2a65abd49d874bf9c5798e93eb97/petabencana.vdx)
@@ -18,33 +18,18 @@ Petabencana is backed by a data [API](https://en.wikipedia.org/wiki/Application_
 
 #### Funding partners
 
-![USAid](.gitbook/assets/USAID-logo.png) ![PMI](.gitbook/assets/pmi_logo.png)
-
-#### Sustaining Partners
-
-![](.gitbook/assets/pln_logo.png)
-
-![](.gitbook/assets/bri_logo.png)
-
-#### Data Partners
-
-![](.gitbook/assets/twitter_logo.png)
-
-![](https://github.com/petabencana/petabencana-docs/tree/d8b3cac5b3bc2a65abd49d874bf9c5798e93eb97/Mapbox_logo.png)
-
-![](.gitbook/assets/pasangmata_logo.png)
-
-![](.gitbook/assets/jsc_logo.png)
+![USAid](.gitbook/assets/USAID-logo.png) ![PMI](<.gitbook/assets/Asset 1b.png>)
 
 #### Implementing Partners
 
-![](.gitbook/assets/bnpb_logo.png)
-
-![](.gitbook/assets/jayaraya_logo.png)
-
-![](.gitbook/assets/bpbd_logo.png)
+![](.gitbook/assets/bnpb\_logo.png)
 
 #### Project Partners
 
-![](.gitbook/assets/Hot_logo.png) ![](.gitbook/assets/pcd_logo%20%281%29.png) ![](.gitbook/assets/cdl_logo.png)
+![USAid](.gitbook/assets/pdc.png)![](.gitbook/assets/Hot\_logo.png)![](.gitbook/assets/cdl\_logo.png)
 
+#### Data Partners
+
+![USAid](.gitbook/assets/twitter.png)![](.gitbook/assets/pasangmata\_logo.png)
+
+![USAid](<.gitbook/assets/mapbox (1).png>)![USAid](.gitbook/assets/qlue.png)
