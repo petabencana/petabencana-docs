@@ -6,11 +6,11 @@ Laporan bencana urun daya secara realtime, secara default laporan akan disajikan
 
 | Parameter Kueri | Deskripsi                                                                                                                                                                         | Format | Wajib |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ----- |
-| admin           | Area mana yang laporannya ingin disajikan? (lihat [Area Didukung](https://docs.petabencana.id/general/area-didukung))                                                             | String | No    |
-| format          | Format apa yang diperlukan dari hasil yang diberikan? (tersedia secara _default_ dalam `json`)                                                                                    | String | No    |
-| geoformat       | Format apa yang diperlukan untuk hasil geografis? (salah satu antara `topojson`, `geojson`, _default_ ke `topojson`)                                                              | String | No    |
-| disaster        | Jenis bencana apa yang datanya ingin disajikan? (salah satu antara `flood, earthquake, fire, haze, wind volcano, secara default,` secara default menampilkan semua jenis bencana) |        |       |
-| timeperiod      | Periode waktu berapa lama (dalam detik) yang dibutuhkan untuk menyajikan laporan, harus diantara 1 dan 604800 (1 minggu)                                                          | Number | No    |
+| admin           | Area mana yang laporannya ingin disajikan? (lihat [Area Didukung](https://docs.petabencana.id/general/area-didukung))                                                             | String | Tidak |
+| format          | Format apa yang diperlukan dari hasil yang diberikan? (tersedia secara _default_ dalam `json`)                                                                                    | String | Tidak |
+| geoformat       | Format apa yang diperlukan untuk hasil geografis? (salah satu antara `topojson`, `geojson`, _default_ ke `topojson`)                                                              | String | Tidak |
+| disaster        | Jenis bencana apa yang datanya ingin disajikan? (salah satu antara `flood, earthquake, fire, haze, wind volcano, secara default,` secara default menampilkan semua jenis bencana) | String | Tidak |
+| timeperiod      | Periode waktu berapa lama (dalam detik) yang dibutuhkan untuk menyajikan laporan, harus diantara 1 dan 604800 (1 minggu)                                                          | Number | Tidak |
 
 ## GET /reports
 
