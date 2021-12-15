@@ -1,24 +1,24 @@
 # Infrastruktur
 
-Lokasi infrastruktur lokal seperti pintu air \(`floodgates`\), pompa \(`pumps`\) dan saluran air \(`waterways`\).
+Lokasi infrastruktur lokal seperti pintu air (`floodgates`), pompa (`pumps`) dan saluran air (`waterways`).
 
 ## Format Permintaan
 
-| Parameter URL | Deskripsi | Format | Wajib |
-| :--- | :--- | :--- | :--- |
-| type | Tipe infrastruktur apa yang ingin diperoleh daftarnya? \(salah satu antara `floodgates`, `pumps`, `waterways`\) | String | Yes |
+| Parameter URL | Deskripsi                                                                                                     | Format | Wajib |
+| ------------- | ------------------------------------------------------------------------------------------------------------- | ------ | ----- |
+| type          | Tipe infrastruktur apa yang ingin diperoleh daftarnya? (salah satu antara `floodgates`, `pumps`, `waterways`) | String | Tidak |
 
-| Parameter Kueri | Deskripsi | Format | Wajib |
-| :--- | :--- | :--- | :--- |
-| city | Area mana yang ingin diperoleh data infrastrukturnya? \(saat ini hanya mendukung `ID-JK`\) | String | Tidak |
-| format | Format apa yang diperlukan dari hasil yang diberikan? \(tersedia secara _default_ dalam `json`\) | String | Tidak |
-| geoformat | Format apa yang diperlukan untuk hasil geografis? \(salah satu antara `topojson`, `geojson`, _default_ ke `topojson`\) | String | Tidak |
+| Parameter Kueri | Deskripsi                                                                                                            | Format | Wajib |
+| --------------- | -------------------------------------------------------------------------------------------------------------------- | ------ | ----- |
+| city            | Area mana yang ingin diperoleh data infrastrukturnya? (saat ini hanya mendukung `ID-JK`)                             | String | Tidak |
+| format          | Format apa yang diperlukan dari hasil yang diberikan? (tersedia secara _default_ dalam `json`)                       | String | Tidak |
+| geoformat       | Format apa yang diperlukan untuk hasil geografis? (salah satu antara `topojson`, `geojson`, _default_ ke `topojson`) | String | Tidak |
 
 ## GET /infrastructure/:type
 
 Menyajikan daftar pompa di Jakarta.
 
-```text
+```
 curl "https://data.petabencana.id/infrastructure/pumps?admin=ID-JK"
 ```
 
@@ -90,4 +90,3 @@ Hasilnya adalah sebagai berikut:
   }
 }
 ```
-
