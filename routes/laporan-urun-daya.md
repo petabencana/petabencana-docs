@@ -14,7 +14,13 @@ Laporan bencana urun daya secara realtime, secara default laporan akan disajikan
 
 ## GET /reports
 
-Daftar semua laporan banjir terkini untuk Jakarta.
+Daftar semua laporan banjir terkini untuk seluruh Indonesia
+
+```
+curl "https://data.petabencana.id/reports?"
+```
+
+Daftar semua laporan banjir terkini untuk Jakarta (menerapkan parameter kueri admin, lihat [Kode Wilayah](../general/area-didukung.md) untuk melihat data dari provinsi lain)
 
 ```
 curl "https://data.petabencana.id/reports?admin=ID-JK"
