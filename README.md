@@ -40,5 +40,4 @@ Petabencana didukung oleh API data yang menyajikan sejumlah endpoint \(ujung jal
 
 #### Mitra Proyek
 
-![](.gitbook/assets/Hot_logo.png) ![](.gitbook/assets/pcd_logo%20%281%29.png) ![](.gitbook/assets/cdl_logo.png)
-
+![USAid](.gitbook/assets/pdc.png)![](.gitbook/assets/Hot\_logo.png)![](.gitbook/assets/cdl\_logo.png)
