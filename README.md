@@ -30,13 +30,13 @@ Petabencana didukung oleh API data yang menyajikan sejumlah endpoint \(ujung jal
 
 ![USAid](<.gitbook/assets/mapbox (1).png>)![USAid](.gitbook/assets/qlue.png)
 
-#### Mitra Pelaksana
+<!-- #### Mitra Pelaksana
 
 ![](.gitbook/assets/bnpb_logo.png)
 
 ![](.gitbook/assets/jayaraya_logo.png)
 
-![](.gitbook/assets/bpbd_logo.png)
+![](.gitbook/assets/bpbd_logo.png) -->
 
 #### Mitra Proyek
 
