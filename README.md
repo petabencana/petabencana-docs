@@ -22,9 +22,7 @@ Petabencana didukung oleh API data yang menyajikan sejumlah endpoint \(ujung jal
 
 #### Mitra Pendukung
 
-![](.gitbook/assets/pln_logo.png)
-
-![](.gitbook/assets/bri_logo.png)
+![](.gitbook/assets/bnpb\_logo.png)
 
 #### Mitra Data
 
