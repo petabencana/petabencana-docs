@@ -18,7 +18,7 @@ Petabencana didukung oleh API data yang menyajikan sejumlah endpoint \(ujung jal
 
 #### Mitra Pendanaan
 
-![USAid](.gitbook/assets/USAID-logo.png) ![PMI](.gitbook/assets/pmi_logo.png)
+[USAid](.gitbook/assets/USAID-logo.png) ![PMI](<.gitbook/assets/Asset 1b.png>)
 
 #### Mitra Pendukung
 
