@@ -24,12 +24,6 @@ Petabencana didukung oleh API data yang menyajikan sejumlah endpoint \(ujung jal
 
 ![](.gitbook/assets/bnpb\_logo.png)
 
-#### Mitra Data
-
-![USAid](.gitbook/assets/twitter.png)![](.gitbook/assets/pasangmata\_logo.png)
-
-![USAid](<.gitbook/assets/mapbox (1).png>)![USAid](.gitbook/assets/qlue.png)
-
 <!-- #### Mitra Pelaksana
 
 ![](.gitbook/assets/bnpb_logo.png)
@@ -41,3 +35,9 @@ Petabencana didukung oleh API data yang menyajikan sejumlah endpoint \(ujung jal
 #### Mitra Proyek
 
 ![USAid](.gitbook/assets/pdc.png)![](.gitbook/assets/Hot\_logo.png)![](.gitbook/assets/cdl\_logo.png)
+
+#### Mitra Data
+
+![USAid](.gitbook/assets/twitter.png)![](.gitbook/assets/pasangmata\_logo.png)
+
+![USAid](<.gitbook/assets/mapbox (1).png>)![USAid](.gitbook/assets/qlue.png)
