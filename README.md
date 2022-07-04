@@ -28,12 +28,13 @@ Petabencana didukung oleh API data yang menyajikan sejumlah endpoint (ujung jalu
 
 #### Mitra Proyek
 
-![](.gitbook/assets/pdc.png) ![](.gitbook/assets/Hot\_logo.png) ![](.gitbook/assets/cdl\_logo.png)
+![](.gitbook/assets/pdc.png)![](<.gitbook/assets/Hot\_logo (1).png>)
+
+![](.gitbook/assets/cdl\_logo.png)
 
 #### Mitra Data
 
-![](.gitbook/assets/twitter.png) ![](.gitbook/assets/pasangmata\_logo.png)
+![](.gitbook/assets/twitter.png)![](.gitbook/assets/pasangmata\_logo.png)
 
-![](<.gitbook/assets/mapbox (1).png>) ![](.gitbook/assets/qlue.png)
+![](<.gitbook/assets/mapbox (1).png>)![](.gitbook/assets/qlue.png)
 
-\`
