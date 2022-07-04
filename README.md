@@ -26,13 +26,9 @@ Petabencana didukung oleh API data yang menyajikan sejumlah endpoint \(ujung jal
 
 #### Mitra Data
 
-![](.gitbook/assets/twitter_logo.png)
+![USAid](.gitbook/assets/twitter.png)![](.gitbook/assets/pasangmata\_logo.png)
 
-![](https://github.com/petabencana/petabencana-docs/tree/d8b3cac5b3bc2a65abd49d874bf9c5798e93eb97/Mapbox_logo.png)
-
-![](.gitbook/assets/pasangmata_logo.png)
-
-![](.gitbook/assets/jsc_logo.png)
+![USAid](<.gitbook/assets/mapbox (1).png>)![USAid](.gitbook/assets/qlue.png)
 
 #### Mitra Pelaksana
 
