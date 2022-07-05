@@ -26,6 +26,6 @@
     * [Stats - Rangkuman Laporan Urun-Daya](routes/statistik/reportssummary.md)
     * [Stats - Rangkuman RW Banjir](routes/statistik/floodedrwssummary.md)
     * [Stats - Rangkuman Wilayah](routes/statistik/floodedregionssummary.md)
-* [Authenticated API](authenticated-api/README.md)
+* [API Terauntentikasi](authenticated-api/README.md)
   * [Kartu Laporan](authenticated-api/kartu-laporan.md)
   * [Umpan](authenticated-api/umpan.md)
