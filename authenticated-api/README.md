@@ -9,4 +9,4 @@ Detail dari setiap endpoint adalah sebagai berikut:
 | Endpoint | Deskripsi     | Metode  | Terproteksi |
 | -------- | ------------- | ------- | ----------- |
 | /cards   | Kartu Laporan | GET,PUT | Ya          |
-|          |               |         |             |
+| /feeds   | Umpan         | GET,PUT | Ya          |
