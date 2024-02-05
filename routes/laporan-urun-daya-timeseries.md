@@ -13,12 +13,12 @@ Perhatikan bahwa zona waktu harus ditentukan sebagai perbedaan waktu +/- UTC yan
 
 ## Get /reports/timeseries
 
-## GET /reports/timeseries
+Note : Please include a User-Agent header in all of your requests. The User-Agent header helps us identify your requests and troubleshoot any issues you may have. To set the User-Agent header, add the following line to your request headers:
 
 GET \(mendapatkan\) hitungan laporan banjir dalam periode waktu tertentu.
 
 ```text
-    curl "https://data.petabencana.id/reports/timeseries?start=2017-11-26T12%3A00%3A00%2B0700&end=2017-11-26T15%3A00%3A00%2B0700"
+    curl --user-agent "YOUR-UA-STRING" "https://api.petabencana.id/reports/timeseries?start=2017-11-26T12%3A00%3A00%2B0700&end=2017-11-26T15%3A00%3A00%2B0700"
 ```
 
 Hasilnya adalah sebagai berikut:
