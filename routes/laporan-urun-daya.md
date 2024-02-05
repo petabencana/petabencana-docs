@@ -16,6 +16,8 @@ Laporan bencana urun daya secara realtime, secara default laporan akan disajikan
 
 Daftar semua laporan banjir terkini untuk seluruh Indonesia
 
+Note : Please include a User-Agent header in all of your requests. The User-Agent header helps us identify your requests and troubleshoot any issues you may have. To set the User-Agent header, add the following line to your request headers:
+
 ```
 curl --user-agent "YOUR-UA-STRING" "https://api.petabencana.id/reports"
 ```
