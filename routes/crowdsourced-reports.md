@@ -17,18 +17,16 @@ Live disaster reports, by default reports will be returned for the last 3 hour.
 List all current reports from Indonesia
 
 ```javascript
-curl "https://data.petabencana.id/reports?"
+curl --user-agent "YOUR-UA-STRING" "https://api.petabencana.id/reports?admin=ID-JK"
 ```
 
-
+Note : Please include a User-Agent header in all of your requests. The User-Agent header helps us identify your requests and troubleshoot any issues you may have. To set the User-Agent header, add the following line to your request headers:
 
 List all current reports from Jakarta.
 
 ```
-curl "https://api.petabencana.id/reports?admin=ID-JK"
+curl --user-agent "YOUR-UA-STRING" "https://api.petabencana.id/reports?admin=ID-JK"
 ```
-
-Results are as follows:
 
 ```javascript
 {
