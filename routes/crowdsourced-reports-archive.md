@@ -20,7 +20,7 @@ Note that time zone must be specified as +/- UTC offset which will require HTML 
 List flood reports in Jakarta received within specified time window
 
 ```text
-curl "https://data.petabencana.id/reports/archive?start=2017-12-04T00%3A00%3A00%2B0700&end=2017-12-06T05%3A00%3A00%2B0700&geoformat=geojson&admin=ID-JK"
+curl "https://api.petabencana.id/reports/archive?start=2017-12-04T00%3A00%3A00%2B0700&end=2017-12-06T05%3A00%3A00%2B0700&geoformat=geojson&admin=ID-JK"
 ```
 
 Results are as follows:
