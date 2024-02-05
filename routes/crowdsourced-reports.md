@@ -25,7 +25,7 @@ curl "https://data.petabencana.id/reports?"
 List all current reports from Jakarta.
 
 ```
-curl "https://data.petabencana.id/reports?admin=ID-JK"
+curl "https://api.petabencana.id/reports?admin=ID-JK"
 ```
 
 Results are as follows:
