@@ -15,12 +15,12 @@ Perhatikan bahwa zona waktu harus ditentukan sebagai perbedaan waktu +/- UTC yan
 
 ## Get /reports/archive
 
-## GET /reports
+Note : Please include a User-Agent header in all of your requests. The User-Agent header helps us identify your requests and troubleshoot any issues you may have. To set the User-Agent header, add the following line to your request headers:
 
 Daftar laporan banjir di Jabodetabek yang diterima dalam jangka waktu tertentu
 
 ```text
-curl "https://data.petabencana.id/reports/archive?start=2017-12-04T00%3A00%3A00%2B0700&end=2017-12-06T05%3A00%3A00%2B0700&geoformat=geojson"
+curl --user-agent "YOUR-UA-STRING" "https://api.petabencana.id/reports/archive?start=2017-12-04T00%3A00%3A00%2B0700&end=2017-12-06T05%3A00%3A00%2B0700&geoformat=geojson"
 ```
 
 Hasilnya adalah sebagai berikut:
