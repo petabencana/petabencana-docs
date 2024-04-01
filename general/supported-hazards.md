@@ -86,6 +86,23 @@ For the scope of this documentation, the disasters will have the following infor
       <td style="text-align:left"><b>fireRadius</b>: the radius of a forest fire estimated by the human
         eye</td>
     </tr>
+    <tr>
+      <td style="text-align:left">Volcano</td>
+      <td style="text-align:left">volcano</td>
+      <td style="text-align:left">
+        <p><b>volcanicSigns</b>: described by symptoms felt by humans</p>
+          <p>0 : Significant Temperature Increases,</p>
+        <p>1 : Drought / Vegetation Death,</p>
+        <p>2: Unusual Animal Behaviour,</p>
+        <p>3: Frequent Earthquake Tremors,</p>
+        <p>4: Frequent Rumbling Sounds</p>
+        <p><b>evacuationNumber</b>: Number of people in your village</p>
+             <p>< 50</p>
+             <p>5 - 50</p>
+             <p>> 50</p>
+        <p><b>evacuationArea</b>: Do you know where to evacuate to?</p>
+      </td>
+    </tr>
   </tbody>
 </table>
 
