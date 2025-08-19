@@ -14,22 +14,3 @@ Petabencana is backed by a data [API](https://en.wikipedia.org/wiki/Application\
 * [Visio XML](https://github.com/petabencana/petabencana-docs/tree/d8b3cac5b3bc2a65abd49d874bf9c5798e93eb97/petabencana.vdx)
 * [OmniGraffle](https://github.com/petabencana/petabencana-docs/tree/d8b3cac5b3bc2a65abd49d874bf9c5798e93eb97/petabencana.graffle.zip)
 
-### Our Sponsors
-
-#### Funding partners
-
-![USAid](.gitbook/assets/USAID-logo.png) ![PMI](<.gitbook/assets/Asset 1b.png>)
-
-#### Implementing Partners
-
-![](.gitbook/assets/bnpb\_logo.png)
-
-#### Project Partners
-
-![USAid](.gitbook/assets/pdc.png)![](.gitbook/assets/Hot\_logo.png)![](.gitbook/assets/cdl\_logo.png)
-
-#### Data Partners
-
-![USAid](.gitbook/assets/twitter.png)![](.gitbook/assets/pasangmata\_logo.png)
-
-![USAid](<.gitbook/assets/mapbox (1).png>)![USAid](.gitbook/assets/qlue.png)
